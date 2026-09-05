@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vivanet — Desarrollo de Software a Medida | Chile</title>
+<meta name="description" content="Vivanet SpA diseña y construye software a medida: aplicaciones web, automatización con IA, integraciones y soporte evolutivo para empresas y organismos del Estado de Chile.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230D2C41'/%3E%3Cpath d='M9 10l7 12 7-12' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='16' cy='22' r='2.2' fill='%233EC1F0'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- ==================== NAV ==================== -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#" class="brand" aria-label="Vivanet — inicio">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0D2C41"/><path d="M9 10l7 12 7-12" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="22" r="2.2" fill="#5AA7D6"/></svg>
+      <span class="brand-name">VIVANET</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#servicios"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg>Servicios</a></li>
+      <li><a href='productos.html'><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>Productos</a></li>
+      <li><a href="#proceso"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>Proceso</a></li>
+      <li><a href="#proyectos"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="12" rx="2"/><path d="M9 21h6"/></svg>Portafolio</a></li>
+      <li><a href="#sector-publico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21h16M5 10h14M6 10v8M10 10v8M14 10v8M18 10v8M12 3L4 8h16z"/></svg>Instituciones</a></li>
+      <li><a href="#soporte"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 13a7.5 7.5 0 0 1 15 0"/><rect x="3" y="13" width="4" height="6" rx="2"/><rect x="17" y="13" width="4" height="6" rx="2"/></svg>Ayuda</a></li>
+      <li><a href="#nosotros"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 20v-1.5a3.5 3.5 0 0 1 3.5-3.5h1a3.5 3.5 0 0 1 3.5 3.5V20"/><circle cx="12" cy="8.5" r="3"/></svg>Nosotros</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#contacto" class="btn btn-primary">Conversemos</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#servicios">Servicios</a>
+  <a href='productos.html'>Productos</a>
+  <a href="#proceso">Proceso</a>
+  <a href="#proyectos">Proyectos</a>
+  <a href="#sector-publico">Instituciones</a>
+  <a href="#soporte">Mesa de ayuda</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#contacto" class="btn btn-primary">Conversemos</a>
+</div>
+
+<!-- ==================== HERO ==================== -->
+<header class="hero">
+  <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+    <source src="https://vivanet-web.netlify.app/hero.mp4" type="video/mp4">
+    <source src="https://vivanet-web.netlify.app/hero.webm" type="video/webm">
+  </video>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="vito-bienvenida" aria-hidden="true">
+<svg class="mascota" width="210" height="223" viewBox="0 0 160 170" aria-hidden="true">
+  <ellipse cx="80" cy="160" rx="44" ry="7" fill="rgba(0,0,0,.22)"/>
+  <g class="flotar">
+    
+    <line x1="80" y1="30" x2="80" y2="14" stroke="#F0F6FA" stroke-width="4" stroke-linecap="round"/>
+    <circle class="antena-luz" cx="80" cy="12" r="7" fill="none" stroke="#5AA7D6" stroke-width="3"/>
+    <circle class="antena-dot" cx="80" cy="12" r="5.5" fill="#5AA7D6"/>
+    <rect x="30" y="28" width="100" height="76" rx="24" fill="#F0F6FA"/>
+    <rect x="42" y="40" width="76" height="52" rx="16" fill="#0D2C41"/>
+    <g class="ojo"><circle cx="63" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <g class="ojo ojo2"><circle cx="97" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <path d="M70 74l10 9 10-9" stroke="#7FD4FF" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <g class="brazo"><path d="M46 118q-16 2-20 -14" stroke="#9CC7E3" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="26" cy="103" r="5.5" fill="#9CC7E3"/></g><path d="M114 120q12 4 12 20" stroke="#9CC7E3" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="126" cy="141" r="5" fill="#9CC7E3"/>
+    <rect x="46" y="108" width="68" height="44" rx="16" fill="#fff" stroke="#C9DCE8" stroke-width="2"/>
+    <path d="M68 118l12 20 12-20" stroke="#17729F" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+  </g>
+</svg>
+  </div>
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow">Desarrollo de software · Chile</span>
+      <h1>Software a medida<br>para <span class="rot"><span class="rot-list"><span>su operación.</span><span>su empresa.</span><span>automatizar.</span><span>sus sistemas.</span><span>su operación.</span></span></span></h1>
+      <p class="hero-sub">Vivanet diseña y construye aplicaciones web, automatización con inteligencia artificial e integraciones a la medida de cada operación — con plazos por hitos, acuerdos claros y soporte.</p>
+      <div class="hero-actions">
+        <a href="#contacto" class="btn btn-primary">Agendar una reunión
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#servicios" class="btn btn-ghost">Ver servicios</a>
+      </div>
+      <div class="hero-chips">
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Entrega por hitos verificables</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Acuerdos claros y por escrito</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Respuesta en menos de 24 h</span>
+              </div>
+    </div>
+  </div>
+</header>
+
+<!-- ==================== SERVICIOS ==================== -->
+<section class="section" id="servicios">
+  <div class="container">
+    <div class="section-head center reveal">
+      <svg class="mascota" width="80" height="86" viewBox="0 0 160 170" aria-hidden="true">
+  <ellipse cx="80" cy="160" rx="44" ry="7" fill="rgba(13,44,65,.10)"/>
+  <g class="flotar">
+    
+    <line x1="80" y1="30" x2="80" y2="14" stroke="#0D2C41" stroke-width="4" stroke-linecap="round"/>
+    <circle class="antena-luz" cx="80" cy="12" r="7" fill="none" stroke="#5AA7D6" stroke-width="3"/>
+    <circle class="antena-dot" cx="80" cy="12" r="5.5" fill="#5AA7D6"/>
+    <rect x="30" y="28" width="100" height="76" rx="24" fill="#0D2C41"/>
+    <rect x="42" y="40" width="76" height="52" rx="16" fill="#0A2334"/>
+    <g class="ojo"><circle cx="63" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <g class="ojo ojo2"><circle cx="97" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <path d="M70 74l10 9 10-9" stroke="#7FD4FF" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M46 120q-12 4-12 20" stroke="#0D2C41" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="34" cy="141" r="5" fill="#0D2C41"/><path d="M114 118q10-8 8-22" stroke="#0D2C41" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <rect x="46" y="108" width="68" height="44" rx="16" fill="#fff" stroke="#DFE9F0" stroke-width="2"/>
+    <path d="M68 118l12 20 12-20" stroke="#17729F" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(14,6)"><g transform="rotate(-28 122 84)"><rect x="118" y="56" width="8" height="15" rx="3" fill="#0D2C41"/><rect x="120" y="70" width="4" height="20" rx="2" fill="#5AA7D6"/></g></g><circle cx="134" cy="98" r="5.5" fill="#0D2C41"/>
+  </g>
+</svg>
+      <div style="height:10px"></div>
+      <span class="eyebrow">Servicios profesionales</span>
+      <h2>Todo lo que su operación necesita, en cuatro frentes</h2>
+      <p>No vendemos licencias genéricas: construimos sobre su proceso real, con tecnología actual y acuerdos claros.</p>
+    </div>
+    <div class="services-grid">
+      <article class="service-card reveal">
+        <div class="service-illus"><svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect x="66" y="22" width="190" height="112" rx="10" fill="#fff"/>
+          <rect x="66" y="22" width="190" height="26" rx="10" fill="#DCEBF5"/>
+          <circle cx="82" cy="35" r="4" fill="#17729F"/><circle cx="96" cy="35" r="4" fill="#5AA7D6"/><circle cx="110" cy="35" r="4" fill="#9CC7E3"/>
+          <rect x="84" y="62" width="110" height="8" rx="4" fill="#C9E0F0"/>
+          <rect x="84" y="78" width="150" height="8" rx="4" fill="#E2EFF7"/>
+          <rect x="84" y="94" width="92" height="8" rx="4" fill="#C9E0F0"/>
+          <rect x="84" y="110" width="128" height="8" rx="4" fill="#E2EFF7"/>
+          <g stroke="#17729F" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M296 50l-26 25 26 25"/><path d="M336 50l26 25-26 25"/></g>
+        </svg></div>
+        <div class="service-title-row"><h3>Software a medida</h3><span class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13.5 6l-3 12"/></svg></span></div>
+        <p>Aplicaciones web y sistemas de gestión construidos desde cero sobre su forma de trabajar. Sin funciones que sobran ni licencias eternas.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Paneles internos y sistemas de gestión</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Portales de clientes y proveedores</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Plataformas de operación y marketplaces</li>
+        </ul>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-illus"><svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect x="118" y="18" width="108" height="118" rx="10" fill="#fff"/>
+          <rect x="134" y="40" width="76" height="7" rx="3.5" fill="#C9E0F0"/>
+          <rect x="134" y="56" width="56" height="7" rx="3.5" fill="#E2EFF7"/>
+          <rect x="134" y="72" width="66" height="7" rx="3.5" fill="#17729F"/>
+          <rect x="134" y="88" width="76" height="7" rx="3.5" fill="#E2EFF7"/>
+          <rect x="134" y="104" width="48" height="7" rx="3.5" fill="#C9E0F0"/>
+          <path d="M290 38l9 24 24 9-24 9-9 24-9-24-24-9 24-9z" fill="#17729F"/>
+          <path d="M338 96l5 13 13 5-13 5-5 13-5-13-13-5 13-5z" fill="#5AA7D6"/>
+        </svg></div>
+        <div class="service-title-row"><h3>IA y datos</h3><span class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/><circle cx="12" cy="12" r="4.2"/></svg></span></div>
+        <p>Inteligencia artificial aplicada donde de verdad aporta: menos trabajo manual, decisiones con evidencia y datos ordenados.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Lectura automática de documentos (OCR)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Clasificación inteligente y automatización</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Limpieza de datos masivos y reportería</li>
+        </ul>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-illus"><svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <g stroke="#8FBDDA" stroke-width="4" stroke-dasharray="2 8" stroke-linecap="round"><path d="M132 78l128-32M132 84l122 34"/></g>
+          <circle cx="108" cy="78" r="26" fill="#17729F"/>
+          <circle cx="108" cy="78" r="10" fill="none" stroke="#fff" stroke-width="4"/>
+          <circle cx="288" cy="42" r="20" fill="#5AA7D6"/>
+          <rect x="280" y="34" width="16" height="16" rx="4" fill="none" stroke="#fff" stroke-width="3.5"/>
+          <circle cx="282" cy="118" r="16" fill="#fff"/>
+          <circle cx="282" cy="118" r="6" fill="#17729F"/>
+          <circle cx="345" cy="80" r="10" fill="#C9E0F0"/>
+        </svg></div>
+        <div class="service-title-row"><h3>Integraciones y APIs</h3><span class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="12" r="2.5"/><circle cx="18.5" cy="5.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/><path d="M7.8 10.9l8.4-4.2M7.8 13.1l8.4 4.2"/></svg></span></div>
+        <p>Hacemos que sus sistemas conversen entre sí y con el resto del mundo, sin planillas intermedias ni digitación doble.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>APIs propias y conexión con servicios externos</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Pagos, facturación y firma electrónica</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Migración y sincronización de datos</li>
+        </ul>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-illus"><svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <path d="M200 20l56 22v34c0 32-23 55-56 64-33-9-56-32-56-64V42z" fill="#fff"/>
+          <path d="M177 76l16 16 30-30" stroke="#17729F" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M96 60a44 44 0 0 1 26-30" stroke="#5AA7D6" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <path d="M92 66l4-14 12 8z" fill="#5AA7D6"/>
+          <path d="M304 92a44 44 0 0 1-26 30" stroke="#5AA7D6" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <path d="M308 86l-4 14-12-8z" fill="#5AA7D6"/>
+        </svg></div>
+        <div class="service-title-row"><h3>Soporte evolutivo</h3><span class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3.5v5c0 4.5-3.2 8.1-8 9.5-4.8-1.4-8-5-8-9.5v-5z"/><path d="M8.5 12l2.5 2.5 4.5-4.5"/></svg></span></div>
+        <p>El software no se entrega y se abandona: lo mantenemos funcionando, seguro y creciendo junto a su operación.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Monitoreo y correcciones garantizadas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Mejoras continuas y nuevas funciones</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Acuerdos de servicio claros (SLA)</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- ==================== CARTERA ==================== -->
+<section class="section section-soft" id="cartera">
+  <div class="container">
+    <div class="section-head center reveal">
+      <svg class="mascota" width="80" height="86" viewBox="0 0 160 170" aria-hidden="true">
+  <ellipse cx="80" cy="160" rx="44" ry="7" fill="rgba(13,44,65,.10)"/>
+  <g class="flotar">
+    
+    <line x1="80" y1="30" x2="80" y2="14" stroke="#0D2C41" stroke-width="4" stroke-linecap="round"/>
+    <circle class="antena-luz" cx="80" cy="12" r="7" fill="none" stroke="#5AA7D6" stroke-width="3"/>
+    <circle class="antena-dot" cx="80" cy="12" r="5.5" fill="#5AA7D6"/>
+    <rect x="30" y="28" width="100" height="76" rx="24" fill="#0D2C41"/>
+    <rect x="42" y="40" width="76" height="52" rx="16" fill="#0A2334"/>
+    <g class="ojo"><circle cx="63" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <g class="ojo ojo2"><circle cx="97" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <path d="M70 74l10 9 10-9" stroke="#7FD4FF" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M46 122q4 12 16 14" stroke="#0D2C41" stroke-width="7" fill="none" stroke-linecap="round"/><path d="M114 122q-4 12-16 14" stroke="#0D2C41" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <rect x="46" y="108" width="68" height="44" rx="16" fill="#fff" stroke="#DFE9F0" stroke-width="2"/>
+    <path d="M68 118l12 20 12-20" stroke="#17729F" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="57" y="121" width="46" height="31" rx="6" fill="#5AA7D6"/><rect x="57" y="121" width="46" height="10" rx="5" fill="#4A94C2"/><path d="M71 138l9 8 9-8" stroke="#fff" stroke-width="3.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="60" cy="135" r="5" fill="#0D2C41"/><circle cx="100" cy="135" r="5" fill="#0D2C41"/>
+  </g>
+</svg>
+      <div style="height:10px"></div>
+      <span class="eyebrow">Productos propios</span>
+      <h2>La familia de productos Vivanet</h2>
+      <p>Plataformas propias listas para operar — y otras en camino. Conózcalas todas en su página.</p>
+    </div>
+    <div class="mini-grid">
+      <a class='mini-card reveal' href='productos.html'>
+        <span class="pstate ok">Disponible</span>
+        <h3>ERP Vivanet</h3>
+        <p>Toda la gestión de su empresa en un solo sistema.</p>
+      </a>
+      <a class='mini-card reveal' href='productos.html'>
+        <span class="pstate ok">Disponible</span>
+        <h3>Anonimización Documental</h3>
+        <p>Protección de datos en documentos masivos.</p>
+      </a>
+      <a class='mini-card reveal' href='productos.html'>
+        <span class="pstate ok">Disponible</span>
+        <h3>Flota24 · Vehículos</h3>
+        <p>Control y asignación de vehículos en línea.</p>
+      </a>
+      <a class='mini-card reveal' href='productos.html'>
+        <span class="pstate ok">Disponible</span>
+        <h3>Marketplace White-Label</h3>
+        <p>Su marketplace, con su marca.</p>
+      </a>
+    </div>
+    <div style="text-align:center">
+      <a class='btn btn-primary' href='productos.html'>Ver todos los productos
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </section>
+
+<!-- ==================== PROCESO ==================== -->
+<section class="section" id="proceso">
+  <div class="container">
+    <div class="section-head center reveal">
+      <svg class="mascota" width="80" height="86" viewBox="0 0 160 170" aria-hidden="true">
+  <ellipse cx="80" cy="160" rx="44" ry="7" fill="rgba(13,44,65,.10)"/>
+  <g class="flotar">
+    
+    <line x1="80" y1="30" x2="80" y2="14" stroke="#0D2C41" stroke-width="4" stroke-linecap="round"/>
+    <circle class="antena-luz" cx="80" cy="12" r="7" fill="none" stroke="#5AA7D6" stroke-width="3"/>
+    <circle class="antena-dot" cx="80" cy="12" r="5.5" fill="#5AA7D6"/>
+    <rect x="30" y="28" width="100" height="76" rx="24" fill="#0D2C41"/>
+    <rect x="42" y="40" width="76" height="52" rx="16" fill="#0A2334"/>
+    <g class="ojo"><circle cx="63" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <g class="ojo ojo2"><circle cx="97" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <path d="M70 74l10 9 10-9" stroke="#7FD4FF" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M46 120q-12 4-12 20" stroke="#0D2C41" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="34" cy="141" r="5" fill="#0D2C41"/><path d="M114 122q8 0 12 4" stroke="#0D2C41" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <rect x="46" y="108" width="68" height="44" rx="16" fill="#fff" stroke="#DFE9F0" stroke-width="2"/>
+    <path d="M68 118l12 20 12-20" stroke="#17729F" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="rotate(6 132 116)"><rect x="118" y="96" width="31" height="42" rx="5" fill="#fff" stroke="#DFE9F0" stroke-width="2"/><rect x="127" y="92" width="13" height="7" rx="3" fill="#5AA7D6"/><path d="M124 110h19M124 118h13" stroke="#DFE9F0" stroke-width="3" stroke-linecap="round"/><path d="M124 128l5 5 9-9" stroke="#1FA84B" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g><circle cx="126" cy="126" r="5" fill="#0D2C41"/>
+  </g>
+</svg>
+      <div style="height:10px"></div>
+      <span class="eyebrow">Cómo trabajamos</span>
+      <h2>Un proceso claro, de la idea a producción</h2>
+      <p>Cada proyecto avanza por etapas con entregables concretos. Usted sabe siempre en qué estamos y qué viene después.</p>
+    </div>
+    <div class="process-grid">
+      <div class="step reveal">
+        <div class="step-num">1</div>
+        <h3>Descubrimiento</h3>
+        <p>Entendemos su operación, sus sistemas y el problema real antes de proponer cualquier solución.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">2</div>
+        <h3>Propuesta y plan</h3>
+        <p>Alcance, plazos, carta Gantt e hitos de pago definidos por escrito. Sin sorpresas ni letra chica.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">3</div>
+        <h3>Desarrollo iterativo</h3>
+        <p>Avances demostrables cada una o dos semanas, con acceso permanente al estado del proyecto.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">4</div>
+        <h3>Pruebas y entrega</h3>
+        <p>Control de calidad, documentación, capacitación y puesta en producción en su infraestructura o en la nube.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">5</div>
+        <h3>Soporte evolutivo</h3>
+        <p>Mantención, monitoreo y nuevas funciones una vez que el sistema está en marcha.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CTA INTERMEDIO ==================== -->
+<section class="section" id="cta">
+  <div class="container">
+    <div class="cta-card reveal">
+      <svg class="mascota" width="128" height="136" viewBox="0 0 160 170" aria-hidden="true">
+  <ellipse cx="80" cy="160" rx="44" ry="7" fill="rgba(0,0,0,.22)"/>
+  <g class="flotar">
+    <circle cx="36" cy="36" r="4" fill="#5AA7D6"/><circle cx="124" cy="28" r="3.5" fill="#4ADE80"/><circle cx="24" cy="70" r="3" fill="#FEBC2E"/><circle cx="136" cy="62" r="4" fill="#7FD4FF"/><rect x="118" y="40" width="7" height="7" rx="2" fill="#4ADE80" transform="rotate(20 121 43)"/><rect x="34" y="52" width="6" height="6" rx="2" fill="#FEBC2E" transform="rotate(-15 37 55)"/>
+    <line x1="80" y1="30" x2="80" y2="14" stroke="#F0F6FA" stroke-width="4" stroke-linecap="round"/>
+    <circle class="antena-luz" cx="80" cy="12" r="7" fill="none" stroke="#5AA7D6" stroke-width="3"/>
+    <circle class="antena-dot" cx="80" cy="12" r="5.5" fill="#5AA7D6"/>
+    <rect x="30" y="28" width="100" height="76" rx="24" fill="#F0F6FA"/>
+    <rect x="42" y="40" width="76" height="52" rx="16" fill="#0D2C41"/>
+    <g class="ojo"><circle cx="63" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <g class="ojo ojo2"><circle cx="97" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <path d="M70 74l10 9 10-9" stroke="#7FD4FF" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M46 116q-14-14-10-30" stroke="#9CC7E3" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="36" cy="84" r="5.5" fill="#9CC7E3"/><path d="M114 116q14-14 10-30" stroke="#9CC7E3" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="124" cy="84" r="5.5" fill="#9CC7E3"/>
+    <rect x="46" y="108" width="68" height="44" rx="16" fill="#fff" stroke="#C9DCE8" stroke-width="2"/>
+    <path d="M68 118l12 20 12-20" stroke="#17729F" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+  </g>
+</svg>
+      <div style="height:14px"></div>
+      <h2>¿Listo para dar el siguiente paso digital?</h2>
+      <p>Ya sea un sistema nuevo, automatizar un proceso con IA o integrar lo que ya tiene — estamos listos para ayudarle a avanzar.</p>
+      <div class="cta-actions">
+        <a href="#contacto" class="btn btn-primary">Conversemos
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class='btn btn-ghost' href='productos.html'>Ver nuestros productos</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== QUÉ CONSTRUIMOS ==================== -->
+<section class="section section-soft" id="proyectos">
+  <div class="container">
+    <div class="section-head center reveal">
+      <svg class="mascota" width="80" height="86" viewBox="0 0 160 170" aria-hidden="true">
+  <ellipse cx="80" cy="160" rx="44" ry="7" fill="rgba(13,44,65,.10)"/>
+  <g class="flotar">
+    
+    <line x1="80" y1="30" x2="80" y2="14" stroke="#0D2C41" stroke-width="4" stroke-linecap="round"/>
+    <circle class="antena-luz" cx="80" cy="12" r="7" fill="none" stroke="#5AA7D6" stroke-width="3"/>
+    <circle class="antena-dot" cx="80" cy="12" r="5.5" fill="#5AA7D6"/>
+    <rect x="30" y="28" width="100" height="76" rx="24" fill="#0D2C41"/>
+    <rect x="42" y="40" width="76" height="52" rx="16" fill="#0A2334"/>
+    <g class="ojo"><circle cx="63" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <g class="ojo ojo2"><circle cx="97" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <path d="M70 74l10 9 10-9" stroke="#7FD4FF" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M46 120q-12 4-12 20" stroke="#0D2C41" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="34" cy="141" r="5" fill="#0D2C41"/><path d="M114 122q18-3 30-8" stroke="#0D2C41" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="145" cy="113" r="5.5" fill="#0D2C41"/>
+    <rect x="46" y="108" width="68" height="44" rx="16" fill="#fff" stroke="#DFE9F0" stroke-width="2"/>
+    <path d="M68 118l12 20 12-20" stroke="#17729F" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+  </g>
+</svg>
+      <div style="height:10px"></div>
+      <span class="eyebrow">Portafolio de soluciones</span>
+      <h2>Qué podemos construir para usted</h2>
+      <p>Tres ejemplos del tipo de solución que desarrollamos. Cada proyecto parte de cero, sobre su realidad.</p>
+    </div>
+    <div class="build-grid">
+      <article class="build-card reveal">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start"><span class="tag">Gestión</span><svg class="mascota" width="52" height="55" viewBox="0 0 160 170" aria-hidden="true">
+  <ellipse cx="80" cy="160" rx="44" ry="7" fill="rgba(13,44,65,.10)"/>
+  <g class="flotar">
+    
+    <line x1="80" y1="30" x2="80" y2="14" stroke="#0D2C41" stroke-width="4" stroke-linecap="round"/>
+    <circle class="antena-luz" cx="80" cy="12" r="7" fill="none" stroke="#5AA7D6" stroke-width="3"/>
+    <circle class="antena-dot" cx="80" cy="12" r="5.5" fill="#5AA7D6"/>
+    <rect x="30" y="28" width="100" height="76" rx="24" fill="#0D2C41"/>
+    <rect x="42" y="40" width="76" height="52" rx="16" fill="#0A2334"/>
+    <g class="ojo"><circle cx="63" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <g class="ojo ojo2"><circle cx="97" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <path d="M70 74l10 9 10-9" stroke="#7FD4FF" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M46 120q-12 4-12 20" stroke="#0D2C41" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="34" cy="141" r="5" fill="#0D2C41"/><path d="M114 122q8 0 12 4" stroke="#0D2C41" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <rect x="46" y="108" width="68" height="44" rx="16" fill="#fff" stroke="#DFE9F0" stroke-width="2"/>
+    <path d="M68 118l12 20 12-20" stroke="#17729F" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="rotate(6 132 116)"><rect x="118" y="96" width="31" height="42" rx="5" fill="#fff" stroke="#DFE9F0" stroke-width="2"/><rect x="127" y="92" width="13" height="7" rx="3" fill="#5AA7D6"/><path d="M124 110h19M124 118h13" stroke="#DFE9F0" stroke-width="3" stroke-linecap="round"/><path d="M124 128l5 5 9-9" stroke="#1FA84B" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g><circle cx="126" cy="126" r="5" fill="#0D2C41"/>
+  </g>
+</svg></div>
+        <h3>Plataforma de gestión operacional</h3>
+        <p>Ordene la operación completa en un solo sistema: solicitudes, flujos de aprobación, estados y reportes en línea.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Roles y permisos por perfil</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Trazabilidad de cada movimiento</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Tableros e indicadores en tiempo real</li>
+        </ul>
+      </article>
+      <article class="build-card reveal">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start"><span class="tag">IA documental</span><svg class="mascota" width="52" height="55" viewBox="0 0 160 170" aria-hidden="true">
+  <ellipse cx="80" cy="160" rx="44" ry="7" fill="rgba(13,44,65,.10)"/>
+  <g class="flotar">
+    
+    <line x1="80" y1="30" x2="80" y2="14" stroke="#0D2C41" stroke-width="4" stroke-linecap="round"/>
+    <circle class="antena-luz" cx="80" cy="12" r="7" fill="none" stroke="#5AA7D6" stroke-width="3"/>
+    <circle class="antena-dot" cx="80" cy="12" r="5.5" fill="#5AA7D6"/>
+    <rect x="30" y="28" width="100" height="76" rx="24" fill="#0D2C41"/>
+    <rect x="42" y="40" width="76" height="52" rx="16" fill="#0A2334"/>
+    <g class="ojo"><circle cx="63" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <g class="ojo ojo2"><circle cx="97" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <path d="M70 74l10 9 10-9" stroke="#7FD4FF" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M46 120q-12 4-12 20" stroke="#0D2C41" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="34" cy="141" r="5" fill="#0D2C41"/><path d="M114 118q10-8 8-22" stroke="#0D2C41" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <rect x="46" y="108" width="68" height="44" rx="16" fill="#fff" stroke="#DFE9F0" stroke-width="2"/>
+    <path d="M68 118l12 20 12-20" stroke="#17729F" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(14,6)"><g transform="rotate(-28 122 84)"><rect x="118" y="56" width="8" height="15" rx="3" fill="#0D2C41"/><rect x="120" y="70" width="4" height="20" rx="2" fill="#5AA7D6"/></g></g><circle cx="134" cy="98" r="5.5" fill="#0D2C41"/>
+  </g>
+</svg></div>
+        <h3>Automatización documental con IA</h3>
+        <p>Miles de documentos, PDF y escaneos procesados automáticamente: lectura, clasificación y datos estructurados listos para usar.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>OCR sobre archivos escaneados</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Clasificación por riesgo o categoría</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Revisión humana solo donde importa</li>
+        </ul>
+      </article>
+      <article class="build-card reveal">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start"><span class="tag">Portales</span><svg class="mascota" width="52" height="55" viewBox="0 0 160 170" aria-hidden="true">
+  <ellipse cx="80" cy="160" rx="44" ry="7" fill="rgba(13,44,65,.10)"/>
+  <g class="flotar">
+    
+    <line x1="80" y1="30" x2="80" y2="14" stroke="#0D2C41" stroke-width="4" stroke-linecap="round"/>
+    <circle class="antena-luz" cx="80" cy="12" r="7" fill="none" stroke="#5AA7D6" stroke-width="3"/>
+    <circle class="antena-dot" cx="80" cy="12" r="5.5" fill="#5AA7D6"/>
+    <rect x="30" y="28" width="100" height="76" rx="24" fill="#0D2C41"/>
+    <rect x="42" y="40" width="76" height="52" rx="16" fill="#0A2334"/>
+    <g class="ojo"><circle cx="63" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <g class="ojo ojo2"><circle cx="97" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <path d="M70 74l10 9 10-9" stroke="#7FD4FF" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M46 122q4 12 16 14" stroke="#0D2C41" stroke-width="7" fill="none" stroke-linecap="round"/><path d="M114 122q-4 12-16 14" stroke="#0D2C41" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <rect x="46" y="108" width="68" height="44" rx="16" fill="#fff" stroke="#DFE9F0" stroke-width="2"/>
+    <path d="M68 118l12 20 12-20" stroke="#17729F" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="57" y="121" width="46" height="31" rx="6" fill="#5AA7D6"/><rect x="57" y="121" width="46" height="10" rx="5" fill="#4A94C2"/><path d="M71 138l9 8 9-8" stroke="#fff" stroke-width="3.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="60" cy="135" r="5" fill="#0D2C41"/><circle cx="100" cy="135" r="5" fill="#0D2C41"/>
+  </g>
+</svg></div>
+        <h3>Portal de clientes con integraciones</h3>
+        <p>Un espacio propio para sus clientes o proveedores: autoatención, seguimiento y pagos conectados a sus sistemas actuales.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Registro y autenticación segura</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Pagos y facturación integrados</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Diseño con su marca (white-label)</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TECNOLOGÍAS ==================== -->
+<section class="section" id="tecnologias">
+  <div class="container">
+    <p class="marquee-label reveal">Tecnologías con las que trabajamos a diario</p>
+    <div class="marquee reveal" aria-label="Tecnologías que usamos">
+      <div class="marquee-track">
+        <span class="tech"><i></i>Python</span>
+        <span class="tech"><i></i>TypeScript / JavaScript</span>
+        <span class="tech"><i></i>React</span>
+        <span class="tech"><i></i>Node.js</span>
+        <span class="tech"><i></i>PostgreSQL</span>
+        <span class="tech"><i></i>Docker</span>
+        <span class="tech"><i></i>AWS</span>
+        <span class="tech"><i></i>Google Cloud</span>
+        <span class="tech"><i></i>Vercel</span>
+        <span class="tech"><i></i>APIs REST</span>
+        <span class="tech"><i></i>Modelos de lenguaje (LLM)</span>
+        <span class="tech"><i></i>OCR</span>
+        <span class="tech"><i></i>ETL / Pipelines de datos</span>
+        <span class="tech" aria-hidden="true"><i></i>Python</span>
+        <span class="tech" aria-hidden="true"><i></i>TypeScript / JavaScript</span>
+        <span class="tech" aria-hidden="true"><i></i>React</span>
+        <span class="tech" aria-hidden="true"><i></i>Node.js</span>
+        <span class="tech" aria-hidden="true"><i></i>PostgreSQL</span>
+        <span class="tech" aria-hidden="true"><i></i>Docker</span>
+        <span class="tech" aria-hidden="true"><i></i>AWS</span>
+        <span class="tech" aria-hidden="true"><i></i>Google Cloud</span>
+        <span class="tech" aria-hidden="true"><i></i>Vercel</span>
+        <span class="tech" aria-hidden="true"><i></i>APIs REST</span>
+        <span class="tech" aria-hidden="true"><i></i>Modelos de lenguaje (LLM)</span>
+        <span class="tech" aria-hidden="true"><i></i>OCR</span>
+        <span class="tech" aria-hidden="true"><i></i>ETL / Pipelines de datos</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== INTEGRACIONES / ECOSISTEMA ==================== -->
+<section class="section section-soft" id="integraciones">
+  <div class="container">
+    <div class="section-head center reveal">
+      <svg class="mascota" width="80" height="86" viewBox="0 0 160 170" aria-hidden="true">
+  <ellipse cx="80" cy="160" rx="44" ry="7" fill="rgba(13,44,65,.10)"/>
+  <g class="flotar">
+    
+    <line x1="80" y1="30" x2="80" y2="14" stroke="#0D2C41" stroke-width="4" stroke-linecap="round"/>
+    <circle class="antena-luz" cx="80" cy="12" r="7" fill="none" stroke="#5AA7D6" stroke-width="3"/>
+    <circle class="antena-dot" cx="80" cy="12" r="5.5" fill="#5AA7D6"/>
+    <rect x="30" y="28" width="100" height="76" rx="24" fill="#0D2C41"/>
+    <rect x="42" y="40" width="76" height="52" rx="16" fill="#0A2334"/>
+    <g class="ojo"><circle cx="63" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <g class="ojo ojo2"><circle cx="97" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <path d="M70 74l10 9 10-9" stroke="#7FD4FF" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M46 120q-12 4-12 20" stroke="#0D2C41" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="34" cy="141" r="5" fill="#0D2C41"/><path d="M114 118q10-8 8-22" stroke="#0D2C41" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <rect x="46" y="108" width="68" height="44" rx="16" fill="#fff" stroke="#DFE9F0" stroke-width="2"/>
+    <path d="M68 118l12 20 12-20" stroke="#17729F" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(14,6)"><g transform="rotate(-28 122 84)"><rect x="118" y="56" width="8" height="15" rx="3" fill="#0D2C41"/><rect x="120" y="70" width="4" height="20" rx="2" fill="#5AA7D6"/></g></g><circle cx="134" cy="98" r="5.5" fill="#0D2C41"/>
+  </g>
+</svg>
+      <span class="eyebrow">Integraciones</span>
+      <h2>Conectado a todo su ecosistema</h2>
+      <p>Los sistemas que construimos no viven aislados: los conectamos con las plataformas que su operación ya usa, para que la información fluya sola, sin doble digitación.</p>
+    </div>
+    <div class="ecosis reveal">
+      <svg viewBox="0 0 920 510" role="img" aria-label="Diagrama: Vivanet se integra con el ecosistema de sistemas de su empresa">
+  <path class="ecosis-linea" d="M460 252 Q334.0 142.0 208 84"/><path class="ecosis-linea" d="M460 252 Q461.0 125.0 462 50"/><path class="ecosis-linea" d="M460 252 Q588.0 142.0 716 84"/><path class="ecosis-linea" d="M460 252 Q293.0 226.0 126 252"/><path class="ecosis-linea" d="M460 252 Q629.0 226.0 798 252"/><path class="ecosis-linea" d="M460 252 Q334.0 312.0 208 424"/><path class="ecosis-linea" d="M460 252 Q461.0 328.0 462 456"/><path class="ecosis-linea" d="M460 252 Q588.0 312.0 716 424"/>
+  <circle class="ecosis-anillo" cx="460" cy="252" r="72" fill="none" stroke="#5AA7D6" stroke-width="2"/>
+  <circle cx="460" cy="252" r="62" fill="#0D2C41"/>
+  <path d="M436 232l24 40 24-40" stroke="#fff" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="460" cy="278" r="6" fill="#5AA7D6"/>
+  <text x="460" y="345" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-size="19" font-weight="700" fill="#0B1C2C">Su software Vivanet</text>
+  <g class="ecosis-nodo"><rect x="100.0" y="57" width="216" height="54" rx="15" fill="#fff" stroke="#DFE9F0" stroke-width="2"/><circle cx="126.0" cy="84" r="7" fill="#17729F"/><text x="144.0" y="90" font-family="Inter,sans-serif" font-size="17.5" font-weight="600" fill="#0B1C2C">SII · Facturación</text></g><g class="ecosis-nodo"><rect x="356.0" y="23" width="212" height="54" rx="15" fill="#fff" stroke="#DFE9F0" stroke-width="2"/><circle cx="382.0" cy="50" r="7" fill="#5AA7D6"/><text x="400.0" y="56" font-family="Inter,sans-serif" font-size="17.5" font-weight="600" fill="#0B1C2C">Mercado Público</text></g><g class="ecosis-nodo"><rect x="612.0" y="57" width="208" height="54" rx="15" fill="#fff" stroke="#DFE9F0" stroke-width="2"/><circle cx="638.0" cy="84" r="7" fill="#1FA84B"/><text x="656.0" y="90" font-family="Inter,sans-serif" font-size="17.5" font-weight="600" fill="#0B1C2C">Bancos y pagos</text></g><g class="ecosis-nodo"><rect x="38.0" y="225" width="176" height="54" rx="15" fill="#fff" stroke="#DFE9F0" stroke-width="2"/><circle cx="64.0" cy="252" r="7" fill="#7C5CFC"/><text x="82.0" y="258" font-family="Inter,sans-serif" font-size="17.5" font-weight="600" fill="#0B1C2C">ERP / CRM</text></g><g class="ecosis-nodo"><rect x="688.0" y="225" width="220" height="54" rx="15" fill="#fff" stroke="#DFE9F0" stroke-width="2"/><circle cx="714.0" cy="252" r="7" fill="#F59E0B"/><text x="732.0" y="258" font-family="Inter,sans-serif" font-size="17.5" font-weight="600" fill="#0B1C2C">Firma electrónica</text></g><g class="ecosis-nodo"><rect x="92.0" y="397" width="232" height="54" rx="15" fill="#fff" stroke="#DFE9F0" stroke-width="2"/><circle cx="118.0" cy="424" r="7" fill="#22B573"/><text x="136.0" y="430" font-family="Inter,sans-serif" font-size="17.5" font-weight="600" fill="#0B1C2C">WhatsApp y correo</text></g><g class="ecosis-nodo"><rect x="356.0" y="429" width="212" height="54" rx="15" fill="#fff" stroke="#DFE9F0" stroke-width="2"/><circle cx="382.0" cy="456" r="7" fill="#E5484D"/><text x="400.0" y="462" font-family="Inter,sans-serif" font-size="17.5" font-weight="600" fill="#0B1C2C">Excel / Power BI</text></g><g class="ecosis-nodo"><rect x="594.0" y="397" width="244" height="54" rx="15" fill="#fff" stroke="#DFE9F0" stroke-width="2"/><circle cx="620.0" cy="424" r="7" fill="#4A94C2"/><text x="638.0" y="430" font-family="Inter,sans-serif" font-size="17.5" font-weight="600" fill="#0B1C2C">Sus sistemas actuales</text></g>
+</svg>
+    </div>
+    <p class="ecosis-note reveal">Facturación y servicios del SII, Mercado Público, bancos y pasarelas de pago, su ERP o CRM actual, correo, WhatsApp y reportería — si tiene una API o un archivo, podemos integrarlo.</p>
+  </div>
+</section>
+
+<!-- ==================== SECTOR PÚBLICO ==================== -->
+<section class="section public" id="sector-publico">
+  <div class="container public-grid">
+    <div class="reveal">
+      <span class="eyebrow">Confianza</span>
+      <h2>Preparados para proyectos exigentes</h2>
+      <p class="lead">Trabajamos con empresas e instituciones que exigen formalidad: acuerdos por escrito, plazos comprometidos, documentación clara y absoluta reserva con su información.</p>
+      <ul class="public-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#5AA7D6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Propuestas formales, con alcance y plazos por escrito</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#5AA7D6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Avances por hitos verificables, sin sorpresas</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#5AA7D6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Confidencialidad y manejo responsable de la información</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#5AA7D6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Entregas ordenadas, con documentación completa</li>
+      </ul>
+      <a href="#contacto" class="btn btn-light">Solicitar una propuesta
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+    <div class="public-card reveal">
+      <div class="pc-head">
+        <svg class="mascota" width="52" height="56" viewBox="0 0 160 170" aria-hidden="true">
+  <ellipse cx="80" cy="160" rx="44" ry="7" fill="rgba(0,0,0,.22)"/>
+  <g class="flotar">
+    
+    <line x1="80" y1="30" x2="80" y2="14" stroke="#F0F6FA" stroke-width="4" stroke-linecap="round"/>
+    <circle class="antena-luz" cx="80" cy="12" r="7" fill="none" stroke="#5AA7D6" stroke-width="3"/>
+    <circle class="antena-dot" cx="80" cy="12" r="5.5" fill="#5AA7D6"/>
+    <rect x="30" y="28" width="100" height="76" rx="24" fill="#F0F6FA"/>
+    <rect x="42" y="40" width="76" height="52" rx="16" fill="#0D2C41"/>
+    <g class="ojo"><circle cx="63" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <g class="ojo ojo2"><circle cx="97" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <path d="M70 74l10 9 10-9" stroke="#7FD4FF" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M46 120q-12 4-12 20" stroke="#9CC7E3" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="34" cy="141" r="5" fill="#9CC7E3"/><path d="M114 120q10 6 10 16" stroke="#9CC7E3" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <rect x="46" y="108" width="68" height="44" rx="16" fill="#fff" stroke="#C9DCE8" stroke-width="2"/>
+    <path d="M68 118l12 20 12-20" stroke="#17729F" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M80 106l-13-6v13zM80 106l13-6v13z" fill="#5AA7D6"/><circle cx="80" cy="106" r="3.2" fill="#17729F"/><rect x="114" y="140" width="26" height="17" rx="4" fill="#F0F6FA"/><path d="M122 140v-4h10v4" stroke="#F0F6FA" stroke-width="3" fill="none"/>
+  </g>
+</svg>
+        <div>
+          <b>Vivanet SpA</b>
+          <small>Empresa chilena de software</small>
+        </div>
+      </div>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#5AA7D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3.5v5c0 4.5-3.2 8.1-8 9.5-4.8-1.4-8-5-8-9.5v-5z"/></svg>Proveedor registrado en Mercado Público (ChileCompra)</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#5AA7D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg>Disponibilidad para reuniones de seguimiento periódicas</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#5AA7D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M9 14h6M9 17h4"/></svg>Informes y documentación técnica en cada hito</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#5AA7D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>Compromisos de plazo y niveles de servicio por contrato</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- ==================== FAQ ==================== -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head center reveal">
+      <svg class="mascota" width="96" height="102" viewBox="0 0 160 170" aria-hidden="true">
+  <ellipse cx="80" cy="160" rx="44" ry="7" fill="rgba(0,0,0,.22)"/>
+  <g class="flotar">
+    <text x="112" y="34" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#5AA7D6">?</text>
+    <line x1="80" y1="30" x2="80" y2="14" stroke="#F0F6FA" stroke-width="4" stroke-linecap="round"/>
+    <circle class="antena-luz" cx="80" cy="12" r="7" fill="none" stroke="#5AA7D6" stroke-width="3"/>
+    <circle class="antena-dot" cx="80" cy="12" r="5.5" fill="#5AA7D6"/>
+    <rect x="30" y="28" width="100" height="76" rx="24" fill="#F0F6FA"/>
+    <rect x="42" y="40" width="76" height="52" rx="16" fill="#0D2C41"/>
+    <g class="ojo"><circle cx="63" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <g class="ojo ojo2"><circle cx="97" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <path d="M70 74l10 9 10-9" stroke="#7FD4FF" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M46 120q-12 4-12 20" stroke="#9CC7E3" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="34" cy="141" r="5" fill="#9CC7E3"/><path d="M114 118q10-12-6-21" stroke="#9CC7E3" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="106" cy="95" r="5" fill="#9CC7E3"/>
+    <rect x="46" y="108" width="68" height="44" rx="16" fill="#fff" stroke="#C9DCE8" stroke-width="2"/>
+    <path d="M68 118l12 20 12-20" stroke="#17729F" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+  </g>
+</svg>
+      <div style="height:10px"></div>
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2>¿Tiene dudas? Se las resolvemos</h2>
+      <p>Las consultas más comunes antes de trabajar con nosotros.</p>
+    </div>
+    <div class="faq-list reveal">
+      <details class="faq-item">
+        <summary>¿Qué tipo de organizaciones atienden?<span class="faq-plus"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>Empresas privadas de cualquier tamaño y organismos públicos a través de Mercado Público. Si el problema se resuelve con software bien hecho, es un proyecto para nosotros.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Cómo cotizan un proyecto?<span class="faq-plus"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>Partimos con una reunión de diagnóstico sin costo para entender el problema. Con eso preparamos una propuesta formal con alcance, plazos, carta Gantt e hitos de pago — sin sorpresas ni letra chica.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Quedamos dependiendo de ustedes?<span class="faq-plus"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>No. Entregamos cada proyecto ordenado y documentado, de modo que su organización mantenga siempre el control de sus sistemas y su información.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Pueden integrar con nuestros sistemas actuales?<span class="faq-plus"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>Sí — es uno de nuestros servicios centrales. Conectamos sistemas vía APIs, bases de datos o archivos, para eliminar planillas intermedias y digitación doble.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Cuánto tarda un proyecto típico?<span class="faq-plus"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>Depende del alcance: un sistema acotado puede estar en producción en pocas semanas. Sea cual sea el tamaño, verá avances demostrables cada una o dos semanas desde el inicio.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Qué pasa después de la entrega?<span class="faq-plus"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>No desaparecemos: ofrecemos soporte evolutivo con monitoreo, correcciones garantizadas y mejoras continuas, bajo acuerdos de servicio claros.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== MESA DE AYUDA ==================== -->
+<section class="section section-soft" id="soporte">
+  <div class="container">
+    <div class="section-head center reveal">
+      <svg class="mascota" width="84" height="90" viewBox="0 0 160 170" aria-hidden="true">
+  <ellipse cx="80" cy="160" rx="44" ry="7" fill="rgba(13,44,65,.10)"/>
+  <g class="flotar">
+    
+    <line x1="80" y1="30" x2="80" y2="14" stroke="#0D2C41" stroke-width="4" stroke-linecap="round"/>
+    <circle class="antena-luz" cx="80" cy="12" r="7" fill="none" stroke="#5AA7D6" stroke-width="3"/>
+    <circle class="antena-dot" cx="80" cy="12" r="5.5" fill="#5AA7D6"/>
+    <rect x="30" y="28" width="100" height="76" rx="24" fill="#0D2C41"/>
+    <rect x="42" y="40" width="76" height="52" rx="16" fill="#0A2334"/>
+    <g class="ojo"><circle cx="63" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <g class="ojo ojo2"><circle cx="97" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <path d="M70 74l10 9 10-9" stroke="#7FD4FF" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M46 122q4 12 16 14" stroke="#0D2C41" stroke-width="7" fill="none" stroke-linecap="round"/><path d="M114 122q-4 12-16 14" stroke="#0D2C41" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <rect x="46" y="108" width="68" height="44" rx="16" fill="#fff" stroke="#DFE9F0" stroke-width="2"/>
+    <path d="M68 118l12 20 12-20" stroke="#17729F" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="58" y="117" width="44" height="33" rx="4" fill="#fff" stroke="#DFE9F0" stroke-width="2"/><path d="M58 120l22 15 22-15" stroke="#17729F" stroke-width="2.6" fill="none" stroke-linejoin="round"/><circle cx="62" cy="136" r="5" fill="#0D2C41"/><circle cx="98" cy="136" r="5" fill="#0D2C41"/>
+  </g>
+</svg>
+      <span class="eyebrow">Mesa de ayuda</span>
+      <h2>¿Necesita ayuda? Estamos aquí</h2>
+      <p>Si ya trabaja con nosotros o usa uno de nuestros sistemas, estos son los canales para pedir soporte — elija el que más le acomode.</p>
+    </div>
+    <div class="ayuda-grid">
+      <div class="ayuda-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5c-1.2 0-2.4-.25-3.4-.7L4 21l1.7-5.1a8.5 8.5 0 1 1 15.3-4.4z"/><path d="M8.5 10.5h7M8.5 14h4"/></svg></div>
+        <h3>Chat con Vito</h3>
+        <p>Parta por aquí: nuestro ayudante lo orienta al instante y le deja el caso encaminado.</p>
+        <a href="#" class="btn btn-primary abrir-ayuda">Abrir el chat</a>
+      </div>
+      <div class="ayuda-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="14" rx="2.5"/><path d="M4 7l8 6 8-6"/></svg></div>
+        <h3>Por correo</h3>
+        <p>Escríbanos el detalle y le respondemos con un responsable asignado a su caso.</p>
+        <a href="mailto:contacto@vivanet.cl?subject=Soporte%20Vivanet" class="btn btn-ghost2">contacto@vivanet.cl</a>
+      </div>
+      <div class="ayuda-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.4 7.5L4 20l.9-4A8.5 8.5 0 1 1 20.5 11.7z"/><path d="M9 10.2c.4 1.6 2.2 3.4 3.8 3.8l1.2-1.2 2 1c-.2 1-.8 1.6-1.8 1.6-3 0-6.6-3.6-6.6-6.6 0-1 .6-1.6 1.6-1.8l1 2z"/></svg></div>
+        <h3>Por WhatsApp</h3>
+        <p>Para avisos rápidos o coordinar una llamada con nuestro equipo técnico.</p>
+        <a href="https://wa.me/56912345678?text=Hola%20Vivanet%2C%20necesito%20soporte" target="_blank" rel="noopener" class="btn btn-ghost2">Escribir por WhatsApp</a>
+      </div>
+    </div>
+    <div class="ayuda-tip reveal">
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Respuesta en menos de 24 horas hábiles</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Incidentes que detienen su operación, con prioridad</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Seguimiento de cada caso hasta dejarlo cerrado</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>Atención de llamados de 9:00 a 18:00 h</li>
+      </ul>
+      <p>Para que sea más rápido, cuéntenos: qué sistema usa, qué pasó y desde cuándo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== NOSOTROS ==================== -->
+<section class="section about" id="nosotros">
+  <div class="container">
+    <div class="section-head reveal">
+      <svg class="mascota" width="92" height="98" viewBox="0 0 160 170" aria-hidden="true">
+  <ellipse cx="80" cy="160" rx="44" ry="7" fill="rgba(0,0,0,.22)"/>
+  <g class="flotar">
+    
+    <line x1="80" y1="30" x2="80" y2="14" stroke="#F0F6FA" stroke-width="4" stroke-linecap="round"/>
+    <circle class="antena-luz" cx="80" cy="12" r="7" fill="none" stroke="#5AA7D6" stroke-width="3"/>
+    <circle class="antena-dot" cx="80" cy="12" r="5.5" fill="#5AA7D6"/>
+    <rect x="30" y="28" width="100" height="76" rx="24" fill="#F0F6FA"/>
+    <rect x="42" y="40" width="76" height="52" rx="16" fill="#0D2C41"/>
+    <g class="ojo"><circle cx="63" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <g class="ojo ojo2"><circle cx="97" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <path d="M70 74l10 9 10-9" stroke="#7FD4FF" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M46 120q-18-2-24-12" stroke="#9CC7E3" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="21" cy="106" r="5.5" fill="#9CC7E3"/><path d="M114 120q18-2 24-12" stroke="#9CC7E3" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="139" cy="106" r="5.5" fill="#9CC7E3"/>
+    <rect x="46" y="108" width="68" height="44" rx="16" fill="#fff" stroke="#C9DCE8" stroke-width="2"/>
+    <path d="M68 118l12 20 12-20" stroke="#17729F" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+  </g>
+</svg>
+      <div style="height:10px"></div>
+      <span class="eyebrow">Quiénes somos</span>
+      <h2>Trayectoria tecnológica, ahora hecha software</h2>
+      <p>Vivanet es una empresa tecnológica chilena formada por profesionales con años de experiencia atendiendo a entidades públicas y privadas en todo el país — primero proveyendo equipamiento y servicios tecnológicos, y hoy construyendo lo que realmente mueve una operación: el software.</p>
+      <p>Desarrollamos sistemas a medida, automatización con inteligencia artificial y un ERP propio listo para operar. La misma seriedad, la misma atención dedicada y la misma respuesta rápida de siempre — aplicadas a soluciones integrales y personalizadas para cada necesidad.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4.5l5 5L8 21H3v-5z"/><path d="M12 7l5 5"/></svg></div>
+        <h3>A medida de verdad</h3>
+        <p>Cada pantalla y cada regla de negocio responde a su proceso, no a una plantilla adaptada a la rápida.</p>
+      </div>
+      <div class="about-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21v-2a4 4 0 0 1 4-4 4 4 0 0 1 4 4v2"/><circle cx="12" cy="8" r="3.5"/></svg></div>
+        <h3>Trato directo</h3>
+        <p>Usted conversa con quien diseña y construye su sistema — atención dedicada desde la preventa hasta la postventa.</p>
+      </div>
+      <div class="about-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15" r="1.6"/></svg></div>
+        <h3>Transparencia total</h3>
+        <p>Trabajo claro, documentado y sin dependencias amarradas. Usted mantiene el control.</p>
+      </div>
+      <div class="about-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.6L20 10l-6.1 1.4L12 17l-1.9-5.6L4 10l6.1-1.4z"/><path d="M18.5 15.5l.9 2.6 2.6.9-2.6.9-.9 2.6-.9-2.6-2.6-.9 2.6-.9z"/></svg></div>
+        <h3>Tecnología actual</h3>
+        <p>IA y automatización aplicadas donde aportan resultados medibles — no como adorno de marketing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONTACTO ==================== -->
+<section class="section section-soft" id="contacto">
+  <div class="container contact-grid">
+    <div class="reveal">
+      <span class="eyebrow">Contacto</span>
+      <h2 style="font-size:clamp(1.55rem,2.7vw,2.05rem);margin-bottom:12px">Conversemos sobre su proyecto</h2>
+      <p style="font-size:1.06rem">Cuéntenos qué problema quiere resolver. En la primera reunión levantamos el contexto y le decimos, con franqueza, si podemos ayudarle y cómo.</p>
+      <ul class="contact-points">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Respuesta en menos de 24 horas hábiles</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Reunión inicial de diagnóstico sin costo</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#17729F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Cotización formal con alcance, plazos e hitos</li>
+      </ul>
+    </div>
+    <div class="contact-card reveal">
+      <svg class="mascota" width="84" height="90" viewBox="0 0 160 170" aria-hidden="true">
+  <ellipse cx="80" cy="160" rx="44" ry="7" fill="rgba(13,44,65,.10)"/>
+  <g class="flotar">
+    
+    <line x1="80" y1="30" x2="80" y2="14" stroke="#0D2C41" stroke-width="4" stroke-linecap="round"/>
+    <circle class="antena-luz" cx="80" cy="12" r="7" fill="none" stroke="#5AA7D6" stroke-width="3"/>
+    <circle class="antena-dot" cx="80" cy="12" r="5.5" fill="#5AA7D6"/>
+    <rect x="30" y="28" width="100" height="76" rx="24" fill="#0D2C41"/>
+    <rect x="42" y="40" width="76" height="52" rx="16" fill="#0A2334"/>
+    <g class="ojo"><circle cx="63" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <g class="ojo ojo2"><circle cx="97" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <path d="M70 74l10 9 10-9" stroke="#7FD4FF" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M46 122q4 12 16 14" stroke="#0D2C41" stroke-width="7" fill="none" stroke-linecap="round"/><path d="M114 122q-4 12-16 14" stroke="#0D2C41" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <rect x="46" y="108" width="68" height="44" rx="16" fill="#fff" stroke="#DFE9F0" stroke-width="2"/>
+    <path d="M68 118l12 20 12-20" stroke="#17729F" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="58" y="117" width="44" height="33" rx="4" fill="#fff" stroke="#DFE9F0" stroke-width="2"/><path d="M58 120l22 15 22-15" stroke="#17729F" stroke-width="2.6" fill="none" stroke-linejoin="round"/><circle cx="62" cy="136" r="5" fill="#0D2C41"/><circle cx="98" cy="136" r="5" fill="#0D2C41"/>
+  </g>
+</svg>
+      <div style="height:10px"></div>
+      <div class="contact-row">
+        <div class="cr-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+        <div><small>Correo</small><a href="mailto:contacto@vivanet.cl">contacto@vivanet.cl</a></div>
+      </div>
+      <div class="contact-row">
+        <div class="cr-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16.5v3a1.5 1.5 0 0 1-1.7 1.5A18.5 18.5 0 0 1 3 5.7 1.5 1.5 0 0 1 4.5 4h3A1.5 1.5 0 0 1 9 5.3c.1 1 .4 2 .7 2.9a1.5 1.5 0 0 1-.4 1.6L8 11a16 16 0 0 0 5 5l1.2-1.3a1.5 1.5 0 0 1 1.6-.4c.9.3 1.9.6 2.9.7a1.5 1.5 0 0 1 1.3 1.5z"/></svg></div>
+        <div><small>Teléfono / WhatsApp</small><a href="https://wa.me/56912345678" target="_blank" rel="noopener">+56 9 1234 5678</a></div>
+      </div>
+      <div class="contact-row" style="border-bottom:none">
+        <div class="cr-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></div>
+        <div><small>Ubicación</small><span class="val">La Serena · Santiago, Chile</span></div>
+      </div>
+      <a class="btn btn-primary" href="mailto:contacto@vivanet.cl?subject=Quiero%20conversar%20un%20proyecto%20con%20Vivanet&body=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20reuni%C3%B3n%20para%20conversar%20sobre%20un%20proyecto.%0A%0AEmpresa%20u%20organismo%3A%20%0AQu%C3%A9%20necesitamos%3A%20%0A">Escribir a Vivanet
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <p class="contact-note">Atendemos empresas y organismos públicos en todo Chile, de forma remota o presencial.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand" aria-label="Vivanet — inicio">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="rgba(255,255,255,.1)"/><path d="M9 10l7 12 7-12" stroke="#5AA7D6" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="22" r="2.2" fill="#fff"/></svg>
+          <span class="brand-name">VIVANET</span>
+        </a>
+        <p>Desarrollo de software a medida, inteligencia artificial aplicada e integraciones para empresas y organismos del Estado de Chile.</p>
+      </div>
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href='productos.html'>Productos</a></li>
+          <li><a href="#proceso">Cómo trabajamos</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#sector-publico">Instituciones</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#soporte">Mesa de ayuda</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:contacto@vivanet.cl">contacto@vivanet.cl</a></li>
+          <li><a href="https://wa.me/56912345678" target="_blank" rel="noopener">+56 9 1234 5678</a></li>
+          <li><span>La Serena · Santiago, Chile</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Vivanet SpA. Todos los derechos reservados.</span>
+      <span style="display:inline-flex;align-items:center;gap:10px"><svg class="mascota" width="42" height="45" viewBox="0 0 160 170" aria-hidden="true">
+  <ellipse cx="80" cy="160" rx="44" ry="7" fill="rgba(0,0,0,.22)"/>
+  <g class="flotar">
+    
+    <line x1="80" y1="30" x2="80" y2="14" stroke="#F0F6FA" stroke-width="4" stroke-linecap="round"/>
+    <circle class="antena-luz" cx="80" cy="12" r="7" fill="none" stroke="#5AA7D6" stroke-width="3"/>
+    <circle class="antena-dot" cx="80" cy="12" r="5.5" fill="#5AA7D6"/>
+    <rect x="30" y="28" width="100" height="76" rx="24" fill="#F0F6FA"/>
+    <rect x="42" y="40" width="76" height="52" rx="16" fill="#0D2C41"/>
+    <path d="M56 62q7 6 14 0" stroke="#7FD4FF" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <g class="ojo ojo2"><circle cx="97" cy="62" r="7.5" fill="#7FD4FF"/></g>
+    <path d="M70 74l10 9 10-9" stroke="#7FD4FF" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <g class="brazo"><path d="M46 118q-16 2-20 -14" stroke="#9CC7E3" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="26" cy="103" r="5.5" fill="#9CC7E3"/></g><path d="M114 120q12 4 12 20" stroke="#9CC7E3" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="126" cy="141" r="5" fill="#9CC7E3"/>
+    <rect x="46" y="108" width="68" height="44" rx="16" fill="#fff" stroke="#C9DCE8" stroke-width="2"/>
+    <path d="M68 118l12 20 12-20" stroke="#17729F" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+  </g>
+</svg>Hecho en Chile 🇨🇱</span>
+    </div>
+  </div>
+</footer>
+
+<button class="subir" id="btnSubir" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<button class="wsp-fab" aria-label="Abrir ayudante de Vivanet">
+  <svg class="mascota" width="36" height="40" viewBox="0 0 40 44" aria-hidden="true" style="overflow:visible">
+    <line x1="20" y1="12" x2="20" y2="7" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+    <circle class="antena-luz" cx="20" cy="5.5" r="4" fill="none" stroke="#7FD4FF" stroke-width="1.8"/>
+    <circle cx="20" cy="5.5" r="2.9" fill="#7FD4FF"/>
+    <g class="ojo"><circle cx="12" cy="22" r="4.4" fill="#fff"/></g>
+    <g class="ojo ojo2"><circle cx="28" cy="22" r="4.4" fill="#fff"/></g>
+    <path d="M12.5 31l7.5 6 7.5-6" stroke="#fff" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+
+<div class="ayu-burbuja-hola" id="ayuHola">¿Te ayudo? 👋</div>
+<div class="ayu-panel" id="ayuPanel" role="dialog" aria-label="Ayudante de Vivanet">
+  <div class="ayu-head">
+    <span class="ayu-cara"><svg width="24" height="26" viewBox="0 0 40 44"><line x1="20" y1="12" x2="20" y2="8" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/><circle cx="20" cy="6" r="2.6" fill="#7FD4FF"/><g class="ojo"><circle cx="12.5" cy="22" r="4" fill="#fff"/></g><g class="ojo ojo2"><circle cx="27.5" cy="22" r="4" fill="#fff"/></g><path d="M13 30.5l7 5.5 7-5.5" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <div><b>Vito · Ayudante Vivanet</b><small>En línea</small></div>
+    <button class="ayu-close" id="ayuCerrar" aria-label="Cerrar">✕</button>
+  </div>
+  <div class="ayu-body" id="ayuBody"></div>
+  <div class="ayu-pie">Respuesta humana en menos de 24 h hábiles</div>
+</div>
+<script>
+(function(){
+  var P = "";
+  var fab = document.querySelector('.wsp-fab');
+  var panel = document.getElementById('ayuPanel');
+  var body = document.getElementById('ayuBody');
+  var hola = document.getElementById('ayuHola');
+  var MAIL = 'contacto@vivanet.cl';
+  var WSP = 'https://wa.me/56912345678';
+
+  var R = {
+    menu: { texto: '¿En qué más te puedo ayudar?', ops: [['q','¿Qué hace Vivanet?'],['p','Conocer los productos'],['c','Pedir una cotización'],['s','Soporte / Mesa de ayuda']] },
+    q: { texto: 'Construimos software a medida: aplicaciones web, automatización con inteligencia artificial e integraciones — para empresas e instituciones de todo Chile, con plazos por hitos y soporte.',
+         acciones: [[P ? P + '#servicios' : '#servicios', 'Ver servicios']] },
+    p: { texto: 'Tenemos una familia de plataformas propias listas para operar: un ERP completo para su empresa, anonimización de documentos, marketplace, control de flotas y más.',
+         acciones: [[P ? 'productos.html' : 'productos.html', 'Ir a Productos']] },
+    c: { texto: '¡Buenísimo! Cuéntanos qué necesitas y te respondemos en menos de 24 horas hábiles con una propuesta seria.',
+         acciones: [['mailto:' + MAIL + '?subject=Cotizaci%C3%B3n%20Vivanet', 'Escribir correo'], [WSP + '?text=Hola%20Vivanet%2C%20quiero%20una%20cotizaci%C3%B3n', 'WhatsApp']] },
+    s: { texto: 'Si ya trabajas con nosotros, escríbenos directo — tu caso queda registrado y lo tomamos con prioridad.',
+         acciones: [[P ? 'index.html#soporte' : '#soporte', 'Ver la Mesa de ayuda'], ['mailto:' + MAIL + '?subject=Soporte%20Vivanet', 'Correo de soporte'], [WSP + '?text=Hola%20Vivanet%2C%20necesito%20soporte', 'WhatsApp']] }
+  };
+
+  function burbujaBot(texto){ var m = document.createElement('div'); m.className = 'ayu-msg';
+    m.innerHTML = '<span class="ayu-mini"><svg width="16" height="17" viewBox="0 0 40 44"><g class="ojo"><circle cx="12.5" cy="20" r="4.5" fill="#7FD4FF"/></g><g class="ojo ojo2"><circle cx="27.5" cy="20" r="4.5" fill="#7FD4FF"/></g><path d="M13 29l7 5.5 7-5.5" stroke="#7FD4FF" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div class="ayu-burb">' + texto + '</div>';
+    body.appendChild(m); body.scrollTop = body.scrollHeight; }
+  function burbujaUsuario(texto){ var m = document.createElement('div'); m.className = 'ayu-msg usuario';
+    m.innerHTML = '<div class="ayu-burb">' + texto + '</div>'; body.appendChild(m); body.scrollTop = body.scrollHeight; }
+  function opciones(lista, acciones){ var w = document.createElement('div'); w.className = 'ayu-ops';
+    (acciones || []).forEach(function(a){ var el = document.createElement('a'); el.className = 'ayu-op accion'; el.href = a[0]; el.textContent = a[1];
+      if (a[0].indexOf('http') === 0 || a[0].indexOf('mailto') === 0) { el.target = '_blank'; el.rel = 'noopener'; } w.appendChild(el); });
+    (lista || []).forEach(function(o){ var el = document.createElement('button'); el.className = 'ayu-op'; el.textContent = o[1];
+      el.addEventListener('click', function(){ w.remove(); responder(o[0], o[1]); }); w.appendChild(el); });
+    body.appendChild(w); body.scrollTop = body.scrollHeight; }
+  function escribir(cb){ var t = document.createElement('div'); t.className = 'ayu-msg';
+    t.innerHTML = '<span class="ayu-mini"></span><span class="ayu-typing"><i></i><i></i><i></i></span>';
+    body.appendChild(t); body.scrollTop = body.scrollHeight;
+    setTimeout(function(){ t.remove(); cb(); }, 650); }
+  function responder(clave, etiqueta){ burbujaUsuario(etiqueta);
+    escribir(function(){ var r = R[clave]; burbujaBot(r.texto); opciones(R.menu.ops, r.acciones); }); }
+
+  var iniciado = false;
+  function abrir(){ panel.classList.add('open'); if (hola) hola.remove();
+    if (!iniciado) { iniciado = true;
+      escribir(function(){ burbujaBot('¡Hola! 👋 Soy <b>Vito</b>, el ayudante de Vivanet. ¿En qué te puedo ayudar?'); opciones(R.menu.ops); }); } }
+  function cerrar(){ panel.classList.remove('open'); }
+  fab.addEventListener('click', function(e){ e.preventDefault(); panel.classList.contains('open') ? cerrar() : abrir(); });
+  document.getElementById('ayuCerrar').addEventListener('click', cerrar);
+  if (hola) hola.addEventListener('click', abrir);
+})();
+</script>
+
+<script>
+(function(){
+  // Sombra del nav al hacer scroll
+  var nav = document.getElementById('nav');
+  var onScroll = function(){ nav.classList.toggle('scrolled', window.scrollY > 10); };
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  // Menú móvil
+  var toggle = document.getElementById('navToggle');
+  var menu = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ menu.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); });
+  });
+
+  // Aparición suave de secciones
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target);
+          setTimeout(function(){ e.target.classList.add('done'); }, 800); }
+      });
+    }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); el.classList.add('done'); });
+  }
+
+  // Presentación animada del hero
+  var stage = document.getElementById('stage');
+  if (stage) {
+    var scenes = stage.querySelectorAll('.scene');
+    var dots = stage.querySelectorAll('.sdot');
+    var cur = 0, timer = null;
+    var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function show(i){
+      scenes[cur].classList.remove('active'); dots[cur].classList.remove('active');
+      cur = (i + scenes.length) % scenes.length;
+      scenes[cur].classList.add('active'); dots[cur].classList.add('active');
+    }
+    function play(){ if (!reduced) timer = setInterval(function(){ show(cur + 1); }, 4400); }
+    function stop(){ if (timer) { clearInterval(timer); timer = null; } }
+    dots.forEach(function(d, i){ d.addEventListener('click', function(){ stop(); show(i); play(); }); });
+    stage.addEventListener('mouseenter', stop);
+    stage.addEventListener('mouseleave', function(){ stop(); play(); });
+    play();
+  }
+
+  // Video del hero: respetar "menos movimiento"
+  var hv = document.querySelector('.hero-video');
+  if (hv && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    hv.removeAttribute('autoplay'); hv.pause();
+  }
+
+  // Año automático
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
+<script>
+(function(){
+  var b = document.getElementById('btnSubir');
+  if (b) {
+    window.addEventListener('scroll', function(){ b.classList.toggle('ver', window.scrollY > 700); }, {passive:true});
+    b.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+  }
+  document.querySelectorAll('.abrir-ayuda').forEach(function(a){
+    a.addEventListener('click', function(e){ e.preventDefault();
+      var fab = document.querySelector('.wsp-fab'); if (fab) fab.click();
+      setTimeout(function(){ var p = document.getElementById('ayuPanel'); if (p) p.scrollIntoView({behavior:'smooth', block:'end'}); }, 150);
+    });
+  });
+})();
+</script>
+</body>
+</html>
