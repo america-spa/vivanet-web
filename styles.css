@@ -363,6 +363,34 @@ footer ul a:hover{color:#fff}
 @keyframes marquee{to{transform:translateX(-50%)}}
 .marquee .tech{flex:none}
 
+/* ---------- Marcas (marquee de logos) ---------- */
+.marcas{background:var(--bg-soft);overflow:hidden;padding-bottom:66px}
+.marcas .section-head{margin-bottom:44px}
+.logos-marquee{overflow:hidden;position:relative;mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.logos-marquee + .logos-marquee{margin-top:16px}
+.logos-track{display:flex;align-items:center;gap:16px;width:max-content;animation:logos-desliza 58s linear infinite}
+.logos-marquee.reverse .logos-track{animation-duration:72s;animation-direction:reverse}
+.logos-marquee:hover .logos-track{animation-play-state:paused}
+@keyframes logos-desliza{to{transform:translateX(-50%)}}
+.logo-chip{flex:none;display:flex;align-items:center;justify-content:center;width:176px;height:78px;background:#fff;border:1px solid var(--line);border-radius:16px;transition:border-color .2s ease,box-shadow .2s ease,transform .2s var(--ease-out)}
+.logo-chip{--esc:1}
+.logo-chip svg{width:calc(var(--w) * var(--esc) * 1px);height:calc(var(--h) * var(--esc) * 1px);fill:#7E96A8;transition:fill .25s ease}
+.logos-note{text-align:center;font-size:13.5px;color:var(--muted);margin-top:26px}
+@media (hover:hover) and (pointer:fine){
+  .logo-chip:hover{border-color:rgba(23,114,159,.3);box-shadow:0 12px 28px rgba(13,44,65,.09);transform:translateY(-3px)}
+  .logo-chip:hover svg{fill:var(--marca)}
+}
+@media (max-width:640px){
+  .logo-chip{width:142px;height:68px;--esc:.8}
+}
+@media (prefers-reduced-motion: reduce){
+  .logos-track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}
+  .logos-marquee{mask-image:none;-webkit-mask-image:none}
+  .logos-marquee + .logos-marquee{margin-top:16px}
+  .logo-chip.dup{display:none}
+  .logo-chip svg{fill:var(--marca)}
+}
+
 /* ---------- Banda Nosotros ---------- */
 .about{background:linear-gradient(155deg,#1B6E99 0%,#155A80 55%,#124E70 100%);color:#CFE3EF;position:relative;overflow:hidden}
 .about::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:rgba(255,255,255,.05);top:-220px;right:-140px}
