@@ -375,7 +375,6 @@ footer ul a:hover{color:#fff}
 .logo-chip{flex:none;display:flex;align-items:center;justify-content:center;width:176px;height:78px;background:#fff;border:1px solid var(--line);border-radius:16px;transition:border-color .2s ease,box-shadow .2s ease,transform .2s var(--ease-out)}
 .logo-chip{--esc:1}
 .logo-chip svg{width:calc(var(--w) * var(--esc) * 1px);height:calc(var(--h) * var(--esc) * 1px);fill:#7E96A8;transition:fill .25s ease}
-.logos-note{text-align:center;font-size:13.5px;color:var(--muted);margin-top:26px}
 @media (hover:hover) and (pointer:fine){
   .logo-chip:hover{border-color:rgba(23,114,159,.3);box-shadow:0 12px 28px rgba(13,44,65,.09);transform:translateY(-3px)}
   .logo-chip:hover svg{fill:var(--marca)}
