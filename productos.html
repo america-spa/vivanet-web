@@ -107,30 +107,6 @@
 .pmore:hover svg{transform:translateX(4px)}
 @media (max-width:1020px){.phero-grid{grid-template-columns:1fr;gap:48px}}
 @media (max-width:640px){.phero{padding:130px 0 70px}.phero-actions .btn{width:100%;justify-content:center}.build-grid article{grid-column:auto !important}}
-/* ---------- Doc24 en detalle ---------- */
-.d24{background:var(--bg-soft);scroll-margin-top:88px}
-.d24-grid{display:grid;grid-template-columns:1.35fr .85fr;gap:56px;align-items:start}
-.d24-copy h2{font-size:clamp(1.9rem,3.2vw,2.5rem);color:var(--ink);letter-spacing:-.02em;margin-bottom:18px}
-.d24-lead{font-size:1.12rem;color:var(--ink);margin-bottom:16px}
-.d24-copy>p{color:var(--body);margin-bottom:16px}
-.d24-sub{font-size:1.02rem;color:var(--ink);margin:32px 0 16px}
-.d24-difs{list-style:none;display:flex;flex-direction:column;gap:18px}
-.d24-difs li{padding-left:20px;border-left:2px solid var(--blue);font-size:.97rem;color:var(--body)}
-.d24-difs b{display:block;color:var(--ink);margin-bottom:4px}
-.d24-ficha{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:32px 30px;position:sticky;top:104px}
-.d24-ficha h3{font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:22px;font-weight:700}
-.d24-ficha dl{margin-bottom:26px}
-.d24-ficha dl>div{padding:13px 0;border-bottom:1px solid var(--bg-soft)}
-.d24-ficha dl>div:first-child{padding-top:0}
-.d24-ficha dl>div:last-child{border-bottom:none}
-.d24-ficha dt{font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--blue);margin-bottom:5px}
-.d24-ficha dd{margin:0;font-size:.93rem;color:var(--body)}
-.d24-ficha .btn{width:100%;justify-content:center}
-@media (max-width:940px){
-  .d24-grid{grid-template-columns:1fr;gap:36px}
-  .d24-ficha{position:static}
-}
-
 </style>
 </head>
 <body>
@@ -291,7 +267,7 @@
         </div>
         <h3>Doc24 · Gestión Documental</h3>
         <p>Gestor documental para el sector público: tramitar, firmar y archivar documentos electrónicos conforme a la Ley 21.180.</p>
-        <a class="pmore" href="#doc24">Ver en detalle
+        <a class="pmore" href="mailto:contacto@vivanet.cl?subject=M%C3%A1s%20informaci%C3%B3n%3A%20Doc24">Más información
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
       </article>
@@ -391,46 +367,6 @@
         </a>
       </article>
     </div>
-  </div>
-</section>
-
-<!-- ==================== DOC24 EN DETALLE ==================== -->
-<section class="section d24" id="doc24">
-  <div class="container d24-grid">
-    <div class="d24-copy reveal">
-      <span class="eyebrow">Gestor documental · Sector público</span>
-      <h2>Doc24</h2>
-      <p class="d24-lead">Plataforma web para que las municipalidades y servicios públicos <strong>tramiten, firmen y archiven</strong> sus documentos electrónicos con firma electrónica avanzada, conforme a la <strong>Ley 21.180</strong> de Transformación Digital del Estado.</p>
-      <p>En la industria se le llama <strong>DMS</strong> —<em>document management system</em>—; en las bases de Mercado Público aparece como <em>«sistema de gestión documental y de correspondencia»</em>. Doc24 cubre el circuito completo: oficina de partes, documentos internos, derivación con plazos y responsables, firma, expediente electrónico y archivo con búsqueda sobre el contenido.</p>
-
-      <h3 class="d24-sub">Qué lo hace distinto</h3>
-      <ul class="d24-difs">
-        <li>
-          <b>Desarrollo propio, no reventa.</b>
-          Ajustamos flujos, formularios y reportes a lo que pida su reglamento interno, sin depender de un tercero.
-        </li>
-        <li>
-          <b>Sus datos son suyos.</b>
-          Exportación completa cuando la institución la pida, sin autorización de por medio ni costo adicional.
-        </li>
-      </ul>
-    </div>
-
-    <aside class="d24-ficha reveal">
-      <h3>Ficha técnica</h3>
-      <dl>
-        <div><dt>Modalidad</dt><dd>SaaS. Arriendo mensual por institución, sin licencias por usuario.</dd></div>
-        <div><dt>Incluye</dt><dd>Alojamiento, soporte, capacitación y actualizaciones normativas.</dd></div>
-        <div><dt>Firma</dt><dd>Firma electrónica avanzada sobre el documento tramitado.</dd></div>
-        <div><dt>Marco normativo</dt><dd>Ley 21.180 de Transformación Digital del Estado y su reglamento.</dd></div>
-        <div><dt>Alcance</dt><dd>Oficina de partes, documentos internos, correspondencia, derivación con plazos, expediente electrónico y archivo.</dd></div>
-        <div><dt>Portabilidad</dt><dd>Exportación íntegra en XML y PDF con hash, a solicitud de la institución.</dd></div>
-        <div><dt>Estado</dt><dd>Disponible. Se implementa por institución, con migración de los documentos históricos.</dd></div>
-      </dl>
-      <a class="btn btn-primary" href="mailto:contacto@vivanet.cl?subject=Doc24%20%E2%80%94%20solicitar%20presentaci%C3%B3n&amp;body=Hola%2C%20quisiera%20una%20presentaci%C3%B3n%20de%20Doc24.%0A%0AInstituci%C3%B3n%3A%20%0AContacto%3A%20%0ASistema%20documental%20actual%3A%20%0A">Solicitar una presentación
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-    </aside>
   </div>
 </section>
 
