@@ -35,7 +35,7 @@
 .pmore svg{width:15px;height:15px;stroke:currentColor;transition:transform .2s var(--ease-out)}
 .pmore:hover svg{transform:translateX(4px)}
 @media (max-width:1020px){.phero-grid{grid-template-columns:1fr;gap:48px}}
-@media (max-width:640px){.phero{padding:130px 0 70px}.phero-actions .btn{width:100%;justify-content:center}.build-grid article{grid-column:auto !important}}
+@media (max-width:640px){.phero{padding:130px 0 70px}.phero-actions .btn{width:100%;justify-content:center}}
 
 /* Encabezados de grupo dentro de la grilla del catalogo. Ocupan la fila
    completa para separar la Suite Municipal del resto de los productos. */
@@ -45,4 +45,28 @@
 .grupo-cab:not(:first-child){border-top:1px solid var(--line);padding-top:34px;margin-top:20px}
 @media (max-width:640px){
   .grupo-cab:not(:first-child){padding-top:26px;margin-top:12px}
+}
+
+
+/* Rejilla del catalogo: 6 columnas para que ningun grupo termine con una fila
+   a medias. Las cuatro de la Suite Municipal ocupan media fila cada una (2 por
+   fila, tarjeta grande: es el grupo insignia) y el resto un tercio (3 por fila).
+   Asi 4 = 2x2, 3 = una fila y 6 = dos filas, sin huecos en ninguno. */
+.build-grid{grid-template-columns:repeat(6,1fr)}
+.build-grid > .build-card{grid-column:span 2}
+.build-grid > .build-card.destacada{grid-column:span 3}
+.build-grid > .grupo-cab,
+.build-grid > .build-card.cta-ancha{grid-column:1 / -1}
+
+@media (max-width:1020px){
+  .build-grid{grid-template-columns:repeat(6,1fr)}
+  .build-grid > .build-card,
+  .build-grid > .build-card.destacada{grid-column:span 3}
+  .build-grid > .build-card.cta-ancha{grid-column:1 / -1}
+}
+@media (max-width:640px){
+  .build-grid{grid-template-columns:repeat(6,1fr)}
+  .build-grid > .build-card,
+  .build-grid > .build-card.destacada{grid-column:span 6}
+  .build-grid > .build-card.cta-ancha{grid-column:1 / -1}
 }
