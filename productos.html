@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Productos — Vivanet</title>
-<meta name="description" content="Productos Vivanet: plataformas propias con IA aplicada para empresas y organismos públicos de Chile.">
+<meta name="description" content="Productos Vivanet: Suite Municipal para gestión documental, asistencia, remuneraciones y activo fijo, más plataformas para empresas y organismos públicos de Chile.">
 <link rel="canonical" href="https://www.vivanet.cl/productos.html">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="author" content="Vivanet SpA">
@@ -13,7 +13,7 @@
 <meta property="og:locale" content="es_CL">
 <meta property="og:url" content="https://www.vivanet.cl/productos.html">
 <meta property="og:title" content="Productos — Vivanet">
-<meta property="og:description" content="Plataformas propias de Vivanet con IA aplicada: Doc24, Bodega24, Flota24, Cobro24, ERP Vivanet y anonimización documental, para empresas y organismos públicos de Chile.">
+<meta property="og:description" content="Plataformas propias de Vivanet: la Suite Municipal (Partes24, Reloj24, Sueldo24 y Activo24) más ERP Vivanet, Bodega24, Flota24 y anonimización documental, para empresas y organismos públicos de Chile.">
 <meta property="og:image" content="https://www.vivanet.cl/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -23,9 +23,9 @@
 <meta name="twitter:description" content="Plataformas propias de Vivanet con IA aplicada para empresas y organismos públicos de Chile.">
 <meta name="twitter:image" content="https://www.vivanet.cl/og-image.jpg">
 <link rel="apple-touch-icon" href="logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="fuentes/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fuentes/space-grotesk-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fuentes/fuentes.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230D2C41'/%3E%3Cpath d='M9 10l7 12 7-12' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='16' cy='22' r='2.2' fill='%233EC1F0'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
@@ -54,60 +54,27 @@
       "@type": "ItemList",
       "@id": "https://www.vivanet.cl/productos.html#listado",
       "name": "Productos de Vivanet",
-      "numberOfItems": 10,
+      "numberOfItems": 13,
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "item": { "@type": "SoftwareApplication", "name": "Bodega24", "alternateName": "Bodega24 · Bodega e Inventario", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "description": "Control de bodega e inventario con trazabilidad de movimientos, stock por ubicación y reportes para auditoría.", "inLanguage": "es-CL", "publisher": { "@id": "https://www.vivanet.cl/#organizacion" } } },
-        { "@type": "ListItem", "position": 2, "item": { "@type": "SoftwareApplication", "name": "Flota24", "alternateName": "Flota24 · Gestión de Vehículos", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "description": "Gestión de flota vehicular: asignaciones, mantenciones, consumo de combustible y documentación al día.", "inLanguage": "es-CL", "publisher": { "@id": "https://www.vivanet.cl/#organizacion" } } },
-        { "@type": "ListItem", "position": 3, "item": { "@type": "SoftwareApplication", "name": "Cobro24", "alternateName": "Cobro24 · Recaudación y Cobranza", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "description": "Recaudación y cobranza para organismos públicos, con seguimiento de deuda, convenios y conciliación de pagos.", "inLanguage": "es-CL", "publisher": { "@id": "https://www.vivanet.cl/#organizacion" } } },
-        { "@type": "ListItem", "position": 4, "item": { "@type": "SoftwareApplication", "name": "Doc24", "alternateName": "Doc24 · Gestión Documental", "applicationCategory": "BusinessApplication", "applicationSubCategory": "Document Management System", "operatingSystem": "Web", "description": "Sistema de gestión documental y de correspondencia (DMS) en modalidad SaaS para municipalidades y servicios públicos: oficina de partes, documentos internos, derivación con plazos, firma electrónica avanzada, expediente electrónico y archivo, conforme a la Ley 21.180 de Transformación Digital del Estado.", "inLanguage": "es-CL", "publisher": { "@id": "https://www.vivanet.cl/#organizacion" } } },
+        { "@type": "ListItem", "position": 1, "item": { "@type": "SoftwareApplication", "name": "Partes24", "alternateName": "Partes24 · Gestión Documental", "applicationCategory": "BusinessApplication", "applicationSubCategory": "Document Management System", "operatingSystem": "Web", "description": "Sistema de gestión documental y de correspondencia (DMS) en modalidad SaaS para municipalidades y servicios públicos: oficina de partes, documentos internos, derivación con plazos, firma electrónica avanzada, expediente electrónico y archivo, conforme a la Ley 21.180 de Transformación Digital del Estado.", "inLanguage": "es-CL", "publisher": { "@id": "https://www.vivanet.cl/#organizacion" } } },
+        { "@type": "ListItem", "position": 2, "item": { "@type": "SoftwareApplication", "name": "Reloj24", "alternateName": "Reloj24 · Control de Asistencia", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "description": "Control de asistencia para municipalidades: recepción de marcajes desde relojes biométricos ZKTeco, turnos y jornadas con vigencia histórica, permisos y licencias, cálculo de atrasos, horas extra y ausencias, y reportes mensuales exportables.", "inLanguage": "es-CL", "publisher": { "@id": "https://www.vivanet.cl/#organizacion" } } },
+        { "@type": "ListItem", "position": 3, "item": { "@type": "SoftwareApplication", "name": "Sueldo24", "alternateName": "Sueldo24 · Remuneraciones Municipales", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "description": "Remuneraciones municipales conforme al Estatuto Administrativo Municipal (Ley 18.883): escala de sueldos por grado, haberes imponibles y tributables, parámetros previsionales del mes, liquidaciones con AFP, salud e impuesto único, y descuento automático por tiempo no trabajado.", "inLanguage": "es-CL", "publisher": { "@id": "https://www.vivanet.cl/#organizacion" } } },
+        { "@type": "ListItem", "position": 4, "item": { "@type": "SoftwareApplication", "name": "Activo24", "alternateName": "Activo24 · Inventario y Activo Fijo", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "description": "Inventario y control de activo fijo para instituciones públicas: bienes con código correlativo, categoría, dependencia y funcionario responsable, altas, traslados y bajas con historial de movimientos, depreciación lineal y etiquetas imprimibles.", "inLanguage": "es-CL", "publisher": { "@id": "https://www.vivanet.cl/#organizacion" } } },
         { "@type": "ListItem", "position": 5, "item": { "@type": "SoftwareApplication", "name": "ERP Vivanet", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "description": "Sistema de gestión modular para la operación administrativa y financiera de la organización.", "inLanguage": "es-CL", "publisher": { "@id": "https://www.vivanet.cl/#organizacion" } } },
-        { "@type": "ListItem", "position": 6, "item": { "@type": "SoftwareApplication", "name": "Anonimización Documental", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "description": "Detección y anonimización automática de datos personales en documentos, para publicación y transparencia.", "inLanguage": "es-CL", "publisher": { "@id": "https://www.vivanet.cl/#organizacion" } } },
-        { "@type": "ListItem", "position": 7, "item": { "@type": "SoftwareApplication", "name": "Gestión de Casos", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "description": "Seguimiento de casos y expedientes con estados, plazos y responsables definidos.", "inLanguage": "es-CL", "publisher": { "@id": "https://www.vivanet.cl/#organizacion" } } },
-        { "@type": "ListItem", "position": 8, "item": { "@type": "SoftwareApplication", "name": "Extractor Documental IA", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "description": "Extracción automática de datos desde documentos con inteligencia artificial, para dejar de digitar a mano.", "inLanguage": "es-CL", "publisher": { "@id": "https://www.vivanet.cl/#organizacion" } } },
-        { "@type": "ListItem", "position": 9, "item": { "@type": "SoftwareApplication", "name": "Asistente Virtual con IA", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "description": "Asistente conversacional entrenado con la documentación de la organización para responder consultas frecuentes.", "inLanguage": "es-CL", "publisher": { "@id": "https://www.vivanet.cl/#organizacion" } } },
-        { "@type": "ListItem", "position": 10, "item": { "@type": "SoftwareApplication", "name": "Gestor de Solicitudes", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "description": "Recepción, derivación y seguimiento de solicitudes internas o ciudadanas, con historial completo.", "inLanguage": "es-CL", "publisher": { "@id": "https://www.vivanet.cl/#organizacion" } } }
+        { "@type": "ListItem", "position": 6, "item": { "@type": "SoftwareApplication", "name": "Bodega24", "alternateName": "Bodega24 · Bodega e Inventario", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "description": "Control de bodega e inventario con trazabilidad de movimientos, stock por ubicación y reportes para auditoría.", "inLanguage": "es-CL", "publisher": { "@id": "https://www.vivanet.cl/#organizacion" } } },
+        { "@type": "ListItem", "position": 7, "item": { "@type": "SoftwareApplication", "name": "Flota24", "alternateName": "Flota24 · Gestión de Vehículos", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "description": "Gestión de flota vehicular: asignaciones, mantenciones, consumo de combustible y documentación al día.", "inLanguage": "es-CL", "publisher": { "@id": "https://www.vivanet.cl/#organizacion" } } },
+        { "@type": "ListItem", "position": 8, "item": { "@type": "SoftwareApplication", "name": "Anonimización Documental", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "description": "Detección y anonimización automática de datos personales en documentos, para publicación y transparencia.", "inLanguage": "es-CL", "publisher": { "@id": "https://www.vivanet.cl/#organizacion" } } },
+        { "@type": "ListItem", "position": 9, "item": { "@type": "SoftwareApplication", "name": "Gestión de Casos", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "description": "Seguimiento de casos y expedientes con estados, plazos y responsables definidos.", "inLanguage": "es-CL", "publisher": { "@id": "https://www.vivanet.cl/#organizacion" } } },
+        { "@type": "ListItem", "position": 10, "item": { "@type": "SoftwareApplication", "name": "Cobro24", "alternateName": "Cobro24 · Recaudación y Cobranza", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "description": "Recaudación y cobranza para organismos públicos, con seguimiento de deuda, convenios y conciliación de pagos.", "inLanguage": "es-CL", "publisher": { "@id": "https://www.vivanet.cl/#organizacion" } } },
+        { "@type": "ListItem", "position": 11, "item": { "@type": "SoftwareApplication", "name": "Extractor Documental IA", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "description": "Extracción automática de datos desde documentos con inteligencia artificial, para dejar de digitar a mano.", "inLanguage": "es-CL", "publisher": { "@id": "https://www.vivanet.cl/#organizacion" } } },
+        { "@type": "ListItem", "position": 12, "item": { "@type": "SoftwareApplication", "name": "Asistente Virtual con IA", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "description": "Asistente conversacional entrenado con la documentación de la organización para responder consultas frecuentes.", "inLanguage": "es-CL", "publisher": { "@id": "https://www.vivanet.cl/#organizacion" } } },
+        { "@type": "ListItem", "position": 13, "item": { "@type": "SoftwareApplication", "name": "Gestor de Solicitudes", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "description": "Recepción, derivación y seguimiento de solicitudes internas o ciudadanas, con historial completo.", "inLanguage": "es-CL", "publisher": { "@id": "https://www.vivanet.cl/#organizacion" } } }
       ]
     }
   ]
 }
 </script>
-<style>
-/* Estilos propios de la página de producto */
-.phero{position:relative;padding:148px 0 80px;overflow:hidden;color:#B9D2E2;background:linear-gradient(168deg,#071B29 0%,#0A2C42 52%,#0D3A54 100%)}
-.phero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.07) 1px, transparent 1px);background-size:28px 28px;mask-image:linear-gradient(115deg,transparent 35%,rgba(0,0,0,.8));-webkit-mask-image:linear-gradient(115deg,transparent 35%,rgba(0,0,0,.8));pointer-events:none}
-.phero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
-.phero .eyebrow{background:rgba(255,255,255,.09);color:#7FD4FF}
-.phero .eyebrow::before{background:#7FD4FF}
-.phero h1{font-size:clamp(2rem,3.7vw,2.85rem);color:#fff;margin-bottom:20px;letter-spacing:-.02em}
-.phero h1 span{color:#4FC3F7}
-.phero-sub{font-size:1.03rem;max-width:560px;margin-bottom:32px;color:#B9D2E2}
-.phero .btn-ghost{background:transparent;border-color:rgba(255,255,255,.35);color:#fff}
-.phero .btn-ghost:hover{border-color:#7FD4FF;color:#7FD4FF}
-.phero .chip{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.16);color:#D9E7F1}
-.phero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:28px}
-.phero-scene{position:relative;inset:auto;opacity:1;transform:none;padding:0;display:block;pointer-events:auto}
-.phero-scene .s2-doc{box-shadow:0 40px 100px rgba(0,0,0,.5)}
-.crumb{position:relative;display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#7FA6BC;margin-bottom:22px}
-.crumb a{color:#7FD4FF}
-.crumb a:hover{text-decoration:underline}
-.feat-icon{width:44px;height:44px;border-radius:12px;background:rgba(23,114,159,.09);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
-.feat-icon svg{width:22px;height:22px;stroke:var(--blue)}
-.pwho{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:760px;margin:0 auto}
-.pcard-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
-.pcard-top .feat-icon{margin-bottom:0}
-.pstate{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:4px 11px;white-space:nowrap}
-.pstate.ok{color:#1FA84B;background:rgba(40,200,64,.12)}
-.pstate.dev{color:#B45309;background:rgba(245,158,11,.16)}
-.pcard-list{list-style:none;display:flex;flex-direction:column;gap:8px;margin-top:14px}
-.pcard-list li{display:flex;gap:9px;font-size:13.5px;color:var(--body);align-items:flex-start}
-.pcard-list svg{width:14px;height:14px;flex:none;margin-top:3px}
-.pmore{margin-top:auto;padding-top:18px;display:inline-flex;align-items:center;gap:7px;font-size:13.5px;font-weight:600;color:var(--blue);transition:color .2s ease}
-.pmore:hover{color:var(--blue-700)}
-.pmore svg{width:15px;height:15px;stroke:currentColor;transition:transform .2s var(--ease-out)}
-.pmore:hover svg{transform:translateX(4px)}
-@media (max-width:1020px){.phero-grid{grid-template-columns:1fr;gap:48px}}
-@media (max-width:640px){.phero{padding:130px 0 70px}.phero-actions .btn{width:100%;justify-content:center}.build-grid article{grid-column:auto !important}}
-</style>
+<link rel="stylesheet" href="productos.css">
 </head>
 <body>
 <!-- ==================== NAV ==================== -->
@@ -119,7 +86,7 @@
     </a>
     <ul class="nav-links">
       <li><a href='index.html#servicios'><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg>Servicios</a></li>
-      <li><a href='productos.html' style='color:#7FD4FF'><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>Productos</a></li>
+      <li><a class="vn-s45" href='productos.html'><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>Productos</a></li>
       <li><a href='index.html#proceso'><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>Proceso</a></li>
       <li><a href='index.html#proyectos'><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="12" rx="2"/><path d="M9 21h6"/></svg>Portafolio</a></li>
       <li><a href='index.html#sector-publico'><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21h16M5 10h14M6 10v8M10 10v8M14 10v8M18 10v8M12 3L4 8h16z"/></svg>Instituciones</a></li>
@@ -150,7 +117,7 @@
   <div class="container phero-grid">
     <div>
       <span class="crumb"><a href='index.html'>Inicio</a> · Productos</span>
-      <span class="eyebrow" style="display:inline-flex">Productos propios</span>
+      <span class="eyebrow vn-s46">Productos propios</span>
       <h1>Productos <span>Vivanet</span></h1>
       <p class="phero-sub">Plataformas propias, construidas con inteligencia artificial aplicada y listas para operar — para empresas y organismos públicos de todo Chile.</p>
       <div class="phero-actions">
@@ -163,7 +130,7 @@
         <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Productos propios, código nuestro</span>
         <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>IA aplicada de verdad</span>
         <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Soporte permanente</span>
-        <span style="margin-left:6px"><svg class="mascota" width="64" height="68" viewBox="0 0 160 170" aria-hidden="true">
+        <span class="vn-s47"><svg class="mascota" width="64" height="68" viewBox="0 0 160 170" aria-hidden="true">
   <ellipse cx="80" cy="160" rx="44" ry="7" fill="rgba(0,0,0,.22)"/>
   <g class="flotar">
     
@@ -185,13 +152,13 @@
     </div>
     <div class="scene active phero-scene" id="docScene" aria-hidden="true">
       <div class="s2-doc">
-        <div class="s2-line" style="width:62%"></div>
-        <div class="s2-line" style="width:88%"></div>
-        <div class="s2-line red r1" style="width:54%"></div>
-        <div class="s2-line" style="width:92%"></div>
-        <div class="s2-line red r2" style="width:40%"></div>
-        <div class="s2-line" style="width:70%"></div>
-        <div class="s2-line red r3" style="width:64%;margin-bottom:0"></div>
+        <div class="s2-line vn-s48"></div>
+        <div class="s2-line vn-s49"></div>
+        <div class="s2-line red r1 vn-s50"></div>
+        <div class="s2-line vn-s51"></div>
+        <div class="s2-line red r2 vn-s52"></div>
+        <div class="s2-line vn-s53"></div>
+        <div class="s2-line red r3 vn-s54"></div>
         <div class="s2-scan"></div>
         <div class="s2-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>Datos personales eliminados</div>
       </div>
@@ -221,12 +188,75 @@
     
   </g>
 </svg>
-      <div style="height:10px"></div>
+      <div class="vn-s1"></div>
       <span class="eyebrow">Catálogo</span>
       <h2>La familia de productos Vivanet</h2>
       <p>Plataformas propias construidas sobre la misma base tecnológica: IA aplicada, documentos y operación real.</p>
     </div>
     <div class="build-grid">
+      <div class="grupo-cab">
+        <h2>Suite Municipal</h2>
+        <p>Cuatro sistemas que operan juntos o por separado, construidos sobre la Ley 21.180 de Transformación Digital del Estado y el Estatuto Administrativo Municipal.</p>
+      </div>
+      <article class="build-card reveal">
+        <div class="pcard-top">
+          <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M8.5 16.5c1.2-2.4 2.1-3.6 2.7-3.6.9 0 .6 2.4 1.5 2.4.5 0 .9-.5 1.3-1.2"/></svg></div>
+          <span class="pstate ok">Disponible</span>
+        </div>
+        <h3>Partes24 · Gestión Documental</h3>
+        <p>Gestor documental para el sector público: tramitar, firmar y archivar documentos electrónicos conforme a la Ley 21.180.</p>
+        <a class="pmore" href="mailto:contacto@vivanet.cl?subject=M%C3%A1s%20informaci%C3%B3n%3A%20Partes24">Más información
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+      <article class="build-card reveal">
+        <div class="pcard-top">
+          <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 6.8v5.4l3.6 2.1"/></svg></div>
+          <span class="pstate ok">Disponible</span>
+        </div>
+        <h3>Reloj24 · Control de Asistencia</h3>
+        <p>Marcaje con relojes biométricos, turnos, permisos y reportes mensuales listos para descuentos.</p>
+        <a class="pmore" href="mailto:contacto@vivanet.cl?subject=M%C3%A1s%20informaci%C3%B3n%3A%20Reloj24">Más información
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+      <article class="build-card reveal">
+        <div class="pcard-top">
+          <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2.6" y="6" width="18.8" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6.1 12h.01M17.9 12h.01"/></svg></div>
+          <span class="pstate ok">Disponible</span>
+        </div>
+        <h3>Sueldo24 · Remuneraciones Municipales</h3>
+        <p>Escala por grado, liquidaciones y descuentos por atrasos tomados directamente de la asistencia.</p>
+        <a class="pmore" href="mailto:contacto@vivanet.cl?subject=M%C3%A1s%20informaci%C3%B3n%3A%20Sueldo24">Más información
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+      <article class="build-card reveal">
+        <div class="pcard-top">
+          <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0l-7.2-7.2a2 2 0 0 1-.6-1.4V4.6a2 2 0 0 1 2-2h7.4a2 2 0 0 1 1.4.6l7 7a2 2 0 0 1 0 2.8z"/><circle cx="7.6" cy="7.6" r="1.3"/></svg></div>
+          <span class="pstate ok">Disponible</span>
+        </div>
+        <h3>Activo24 · Inventario y Activo Fijo</h3>
+        <p>Bienes con responsable y dependencia, movimientos, depreciación y etiquetas imprimibles.</p>
+        <a class="pmore" href="mailto:contacto@vivanet.cl?subject=M%C3%A1s%20informaci%C3%B3n%3A%20Activo24">Más información
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+      <div class="grupo-cab">
+        <h2>Empresas e instituciones</h2>
+        <p>Plataformas para operaciones privadas y organismos públicos fuera del ámbito municipal.</p>
+      </div>
+      <article class="build-card reveal">
+        <div class="pcard-top">
+          <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.8v3M12 18.2v3M2.8 12h3M18.2 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg></div>
+          <span class="pstate ok">Disponible</span>
+        </div>
+        <h3>ERP Vivanet</h3>
+        <p>Toda la gestión de su empresa en un solo sistema, completo y listo para operar.</p>
+        <a class="pmore" href="mailto:contacto@vivanet.cl?subject=M%C3%A1s%20informaci%C3%B3n%3A%20ERP%20Vivanet">Más información
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
       <article class="build-card reveal">
         <div class="pcard-top">
           <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></div>
@@ -251,39 +281,6 @@
       </article>
       <article class="build-card reveal">
         <div class="pcard-top">
-          <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg></div>
-          <span class="pstate dev">En desarrollo</span>
-        </div>
-        <h3>Cobro24 · Recaudación y Cobranza</h3>
-        <p>Emisión de documentos de cobro y gestión de la cobranza de principio a fin.</p>
-        <a class="pmore" href="mailto:contacto@vivanet.cl?subject=M%C3%A1s%20informaci%C3%B3n%3A%20Cobro24">Más información
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </article>
-      <article class="build-card reveal">
-        <div class="pcard-top">
-          <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M8.5 16.5c1.2-2.4 2.1-3.6 2.7-3.6.9 0 .6 2.4 1.5 2.4.5 0 .9-.5 1.3-1.2"/></svg></div>
-          <span class="pstate ok">Disponible</span>
-        </div>
-        <h3>Doc24 · Gestión Documental</h3>
-        <p>Gestor documental para el sector público: tramitar, firmar y archivar documentos electrónicos conforme a la Ley 21.180.</p>
-        <a class="pmore" href="mailto:contacto@vivanet.cl?subject=M%C3%A1s%20informaci%C3%B3n%3A%20Doc24">Más información
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </article>
-      <article class="build-card reveal">
-        <div class="pcard-top">
-          <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.8v3M12 18.2v3M2.8 12h3M18.2 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg></div>
-          <span class="pstate ok">Disponible</span>
-        </div>
-        <h3>ERP Vivanet</h3>
-        <p>Toda la gestión de su empresa en un solo sistema, completo y listo para operar.</p>
-        <a class="pmore" href="mailto:contacto@vivanet.cl?subject=M%C3%A1s%20informaci%C3%B3n%3A%20ERP%20Vivanet">Más información
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </article>
-      <article class="build-card reveal">
-        <div class="pcard-top">
           <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M9 13h6"/></svg></div>
           <span class="pstate ok">Disponible</span>
         </div>
@@ -301,6 +298,17 @@
         <h3>Gestión de Casos</h3>
         <p>Registro, seguimiento y atención de casos con roles, plazos y reportes.</p>
         <a class="pmore" href="mailto:contacto@vivanet.cl?subject=M%C3%A1s%20informaci%C3%B3n%3A%20Gesti%C3%B3n%20de%20Casos">Más información
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+      <article class="build-card reveal">
+        <div class="pcard-top">
+          <div class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg></div>
+          <span class="pstate dev">En desarrollo</span>
+        </div>
+        <h3>Cobro24 · Recaudación y Cobranza</h3>
+        <p>Emisión de documentos de cobro y gestión de la cobranza de principio a fin.</p>
+        <a class="pmore" href="mailto:contacto@vivanet.cl?subject=M%C3%A1s%20informaci%C3%B3n%3A%20Cobro24">Más información
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
       </article>
@@ -340,7 +348,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
       </article>
-      <article class="build-card reveal" style="display:flex;flex-direction:column;justify-content:center;text-align:center;background:linear-gradient(160deg,#0D2C41,#134058);border:none;grid-column:1 / -1;padding:44px 30px">
+      <article class="build-card reveal vn-s55">
         <svg class="mascota" width="88" height="94" viewBox="0 0 160 170" aria-hidden="true">
   <ellipse cx="80" cy="160" rx="44" ry="7" fill="rgba(0,0,0,.22)"/>
   <g class="flotar">
@@ -359,10 +367,10 @@
     
   </g>
 </svg>
-        <div style="height:10px"></div>
-        <h3 style="color:#fff;margin-bottom:10px">¿Necesita algo que no está aquí?</h3>
-        <p style="color:#B9CEDC;margin-bottom:20px">Todos nuestros productos nacieron como un desarrollo a medida. El suyo puede ser el siguiente.</p>
-        <a class='btn btn-light' href='index.html#contacto' style='align-self:center'>Conversemos
+        <div class="vn-s1"></div>
+        <h3 class="vn-s56">¿Necesita algo que no está aquí?</h3>
+        <p class="vn-s57">Todos nuestros productos nacieron como un desarrollo a medida. El suyo puede ser el siguiente.</p>
+        <a class='btn btn-light vn-s58' href='index.html#contacto'>Conversemos
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
       </article>
@@ -411,7 +419,7 @@
     </div>
     <div class="footer-bottom">
       <span>© <span id="year">2026</span> Vivanet SpA. Todos los derechos reservados. &nbsp;·&nbsp; <a href="privacidad.html">Privacidad</a> &nbsp;·&nbsp; <a href="terminos.html">Términos</a></span>
-      <span style="display:inline-flex;align-items:center;gap:10px"><svg class="mascota" width="42" height="45" viewBox="0 0 160 170" aria-hidden="true">
+      <span class="vn-s43"><svg class="mascota" width="42" height="45" viewBox="0 0 160 170" aria-hidden="true">
   <ellipse cx="80" cy="160" rx="44" ry="7" fill="rgba(0,0,0,.22)"/>
   <g class="flotar">
     
@@ -448,7 +456,7 @@
 </div>
 <button class="subir" id="btnSubir" aria-label="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 <button class="wsp-fab" aria-label="Abrir ayudante de Vivanet">
-  <svg class="mascota" width="36" height="40" viewBox="0 0 40 44" aria-hidden="true" style="overflow:visible">
+  <svg class="mascota vn-s44" width="36" height="40" viewBox="0 0 40 44" aria-hidden="true">
     <line x1="20" y1="12" x2="20" y2="7" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
     <circle class="antena-luz" cx="20" cy="5.5" r="4" fill="none" stroke="#7FD4FF" stroke-width="1.8"/>
     <circle cx="20" cy="5.5" r="2.9" fill="#7FD4FF"/>

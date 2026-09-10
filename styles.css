@@ -744,11 +744,68 @@ footer ul a:hover{color:#fff}
   .rot{vertical-align:baseline}
 }
 
-/* Espejo de GitHub Pages: el video se sirve desde Netlify. El degradado queda detras,
-   asi el hero se ve bien durante el segundo que tarda en cargar. */
-.hero{
-  background:
-    radial-gradient(115% 80% at 88% 6%, rgba(38,140,190,.42) 0%, rgba(38,140,190,0) 60%),
-    radial-gradient(90% 60% at 8% 96%, rgba(13,58,84,.55) 0%, rgba(13,58,84,0) 62%),
-    linear-gradient(168deg,#061620 0%,#0A2C42 55%,#0D3A54 100%);
-}
+/* ============================================================
+   Clases generadas por _sin_inline.py. Reemplazan los antiguos
+   atributos style="" del HTML, para que la CSP pueda prohibir
+   los estilos en linea ('unsafe-inline' fuera de style-src).
+   No editar a mano: se regeneran con python3 _sin_inline.py
+   ============================================================ */
+.vn-s1{height:10px}
+.vn-s2{text-align:center}
+.vn-s3{height:14px}
+.vn-s4{display:flex;justify-content:space-between;align-items:flex-start}
+.vn-s5{--marca:#1428A0;--w:116;--h:18}
+.vn-s6{--marca:#8D8D8D;--w:112;--h:20}
+.vn-s7{--marca:#0096D6;--w:38;--h:38}
+.vn-s8{--marca:#007DB8;--w:38;--h:38}
+.vn-s9{--marca:#A50034;--w:71;--h:31}
+.vn-s10{--marca:#003399;--w:96;--h:23}
+.vn-s11{--marca:#0049AB;--w:116;--h:18}
+.vn-s12{--marca:#678900;--w:38;--h:38}
+.vn-s13{--marca:#6B9715;--w:96;--h:23}
+.vn-s14{--marca:#000000;--w:103;--h:21}
+.vn-s15{--marca:#000000;--w:31;--h:38}
+.vn-s16{--marca:#E2231A;--w:81;--h:27}
+.vn-s17{--marca:#FF0000;--w:116;--h:18}
+.vn-s18{--marca:#0071C5;--w:75;--h:29}
+.vn-s19{--marca:#ED1C24;--w:96;--h:23}
+.vn-s20{--marca:#619800;--w:57;--h:38}
+.vn-s21{--marca:#1BA0D7;--w:65;--h:34}
+.vn-s22{--marca:#3DA6AF;--w:38;--h:38}
+.vn-s23{--marca:#5A9C3C;--w:43;--h:38}
+.vn-s24{--marca:#000000;--w:90;--h:24}
+.vn-s25{--marca:#AB9700;--w:89;--h:25}
+.vn-s26{--marca:#FB0020;--w:115;--h:19}
+.vn-s27{--marca:#FF3300;--w:63;--h:35}
+.vn-s28{--marca:#000000;--w:116;--h:14}
+.vn-s29{--marca:#1414A0;--w:91;--h:24}
+.vn-s30{--marca:#E60027;--w:116;--h:19}
+.vn-s31{--marca:#E1140A;--w:38;--h:38}
+.vn-s32{--marca:#005AFF;--w:97;--h:23}
+.vn-s33{--marca:#000000;--w:111;--h:20}
+.vn-s34{--marca:#000000;--w:35;--h:38}
+.vn-s35{--marca:#006D5C;--w:107;--h:20}
+.vn-s36{--marca:#000000;--w:27;--h:38}
+.vn-s37{--marca:#4B1E78;--w:38;--h:38}
+.vn-s38{--marca:#000000;--w:110;--h:20}
+.vn-s39{--marca:#FF0000;--w:31;--h:38}
+.vn-s40{font-size:clamp(1.55rem,2.7vw,2.05rem);margin-bottom:12px}
+.vn-s41{font-size:1.06rem}
+.vn-s42{border-bottom:none}
+.vn-s43{display:inline-flex;align-items:center;gap:10px}
+.vn-s44{overflow:visible}
+.vn-s45{color:#7FD4FF}
+.vn-s46{display:inline-flex}
+.vn-s47{margin-left:6px}
+.vn-s48{width:62%}
+.vn-s49{width:88%}
+.vn-s50{width:54%}
+.vn-s51{width:92%}
+.vn-s52{width:40%}
+.vn-s53{width:70%}
+.vn-s54{width:64%;margin-bottom:0}
+.vn-s55{display:flex;flex-direction:column;justify-content:center;text-align:center;background:linear-gradient(160deg,#0D2C41,#134058);border:none;grid-column:1 / -1;padding:44px 30px}
+.vn-s56{color:#fff;margin-bottom:10px}
+.vn-s57{color:#B9CEDC;margin-bottom:20px}
+.vn-s58{align-self:center}
+.footer-liso{border-top:none;padding-top:0}

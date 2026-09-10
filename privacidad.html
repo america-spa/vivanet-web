@@ -7,31 +7,12 @@
 <meta name="description" content="Política de privacidad de Vivanet SpA: qué datos tratamos, para qué y cómo ejercer sus derechos. Este sitio no usa cookies ni herramientas de seguimiento.">
 <link rel="canonical" href="https://www.vivanet.cl/privacidad.html">
 <meta name="robots" content="index, follow">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="fuentes/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fuentes/space-grotesk-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fuentes/fuentes.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230D2C41'/%3E%3Cpath d='M9 10l7 12 7-12' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='16' cy='22' r='2.2' fill='%233EC1F0'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="styles.css">
-<style>
-.legal-hero{background:var(--navy-900);color:#B9D2E2;padding:132px 0 54px}
-.legal-hero h1{color:#fff;font-size:clamp(1.9rem,4vw,2.6rem);letter-spacing:-.02em;margin-bottom:12px}
-.legal-hero p{color:#9CBBD0;font-size:.98rem;margin:0}
-.legal{padding:56px 0 76px;background:var(--bg)}
-.legal .container{max-width:760px}
-.legal h2{font-size:1.18rem;color:var(--ink);margin:38px 0 12px;letter-spacing:-.01em}
-.legal h2:first-of-type{margin-top:0}
-.legal p,.legal li{color:var(--body);font-size:1rem;margin-bottom:12px}
-.legal ul{padding-left:22px;margin-bottom:16px}
-.legal li{margin-bottom:8px}
-.legal strong{color:var(--ink)}
-.legal a{color:var(--blue);font-weight:500}
-.legal .aviso{background:var(--bg-soft);border-left:3px solid var(--blue);padding:18px 22px;border-radius:0 10px 10px 0;margin:30px 0 0}
-.legal .aviso p{margin:0;font-size:.95rem}
-.legal .fecha{font-size:.88rem;color:var(--muted);margin-top:36px;padding-top:20px;border-top:1px solid var(--line)}
-.legal-volver{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-weight:600;font-size:.95rem;margin-bottom:34px}
-.legal-volver svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2.2}
-@media (max-width:900px){.legal-hero{padding:108px 0 44px}.legal{padding:44px 0 60px}}
-</style>
+<link rel="stylesheet" href="legal.css">
 </head>
 <body>
 <nav class="nav" id="nav">
@@ -62,6 +43,7 @@
     <h2>Este sitio no usa cookies ni herramientas de seguimiento</h2>
     <p>Queremos ser explícitos en esto porque no es lo habitual: <strong>este sitio no instala cookies, no usa Google Analytics ni ninguna otra herramienta de analítica, y no incorpora píxeles de publicidad ni botones de redes sociales que rastreen su navegación.</strong></p>
     <p>Usted puede recorrer el sitio completo sin que se recoja ningún dato personal suyo de forma automática. Por eso tampoco necesitamos mostrarle un banner de consentimiento de cookies.</p>
+    <p>Tampoco cargamos recursos alojados en servidores de terceros. Las tipografías, las hojas de estilo, los scripts, las imágenes y los videos se sirven desde nuestro propio dominio, de modo que su dirección IP no llega a ninguna empresa externa por el solo hecho de abrir esta página. Las cabeceras de seguridad del sitio impiden técnicamente que el navegador cargue recursos de otros orígenes.</p>
 
     <h2>Qué datos tratamos</h2>
     <p>Solo tratamos los datos que usted decide entregarnos voluntariamente cuando nos contacta:</p>
@@ -110,7 +92,7 @@
 
 <footer>
   <div class="container">
-    <div class="footer-bottom" style="border-top:none;padding-top:0">
+    <div class="footer-bottom footer-liso">
       <span>&copy; 2026 Vivanet SpA. Todos los derechos reservados.</span>
       <span><a href="privacidad.html">Privacidad</a> &middot; <a href="terminos.html">T&eacute;rminos</a> &middot; <a href="index.html#contacto">Contacto</a></span>
     </div>

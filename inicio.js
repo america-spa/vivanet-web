@@ -119,6 +119,7 @@
         mp4.src = hv.dataset.mp4; mp4.type = 'video/mp4';
         var webm = document.createElement('source');
         webm.src = hv.dataset.webm; webm.type = 'video/webm';
+        hv.poster = "hero-poster.jpg";
         hv.appendChild(webm); hv.appendChild(mp4);
         hv.load();
         var p = hv.play();

@@ -1,0 +1,21 @@
+/* Estilos de las paginas legales (privacidad y terminos). Antes iban
+   en un bloque <style> dentro del HTML; se extrajeron para poder
+   prohibir los estilos en linea en la CSP. */
+.legal-hero{background:var(--navy-900);color:#B9D2E2;padding:132px 0 54px}
+.legal-hero h1{color:#fff;font-size:clamp(1.9rem,4vw,2.6rem);letter-spacing:-.02em;margin-bottom:12px}
+.legal-hero p{color:#9CBBD0;font-size:.98rem;margin:0}
+.legal{padding:56px 0 76px;background:var(--bg)}
+.legal .container{max-width:760px}
+.legal h2{font-size:1.18rem;color:var(--ink);margin:38px 0 12px;letter-spacing:-.01em}
+.legal h2:first-of-type{margin-top:0}
+.legal p,.legal li{color:var(--body);font-size:1rem;margin-bottom:12px}
+.legal ul{padding-left:22px;margin-bottom:16px}
+.legal li{margin-bottom:8px}
+.legal strong{color:var(--ink)}
+.legal a{color:var(--blue);font-weight:500}
+.legal .aviso{background:var(--bg-soft);border-left:3px solid var(--blue);padding:18px 22px;border-radius:0 10px 10px 0;margin:30px 0 0}
+.legal .aviso p{margin:0;font-size:.95rem}
+.legal .fecha{font-size:.88rem;color:var(--muted);margin-top:36px;padding-top:20px;border-top:1px solid var(--line)}
+.legal-volver{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-weight:600;font-size:.95rem;margin-bottom:34px}
+.legal-volver svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2.2}
+@media (max-width:900px){.legal-hero{padding:108px 0 44px}.legal{padding:44px 0 60px}}
