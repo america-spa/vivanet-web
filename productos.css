@@ -56,17 +56,20 @@
 .build-grid > .build-card{grid-column:span 2}
 .build-grid > .build-card.destacada{grid-column:span 3}
 .build-grid > .grupo-cab,
-.build-grid > .build-card.cta-ancha{grid-column:1 / -1}
+.build-grid > .build-card.cta-ancha,
+  .build-grid > .build-card.ancha{grid-column:1 / -1}
 
 @media (max-width:1020px){
   .build-grid{grid-template-columns:repeat(6,1fr)}
   .build-grid > .build-card,
   .build-grid > .build-card.destacada{grid-column:span 3}
-  .build-grid > .build-card.cta-ancha{grid-column:1 / -1}
+  .build-grid > .build-card.cta-ancha,
+  .build-grid > .build-card.ancha{grid-column:1 / -1}
 }
 @media (max-width:640px){
   .build-grid{grid-template-columns:repeat(6,1fr)}
   .build-grid > .build-card,
   .build-grid > .build-card.destacada{grid-column:span 6}
-  .build-grid > .build-card.cta-ancha{grid-column:1 / -1}
+  .build-grid > .build-card.cta-ancha,
+  .build-grid > .build-card.ancha{grid-column:1 / -1}
 }
