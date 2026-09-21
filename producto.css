@@ -55,3 +55,8 @@
   .pr-lista{columns:1}
   .pr-cta{padding:30px 24px}
 }
+
+.pr-estado{display:inline-block;margin-left:8px;font-family:var(--font-head);font-size:11.5px;
+  letter-spacing:.1em;text-transform:uppercase;color:#F6C177;
+  background:rgba(246,193,119,.12);border:1px solid rgba(246,193,119,.32);
+  border-radius:100px;padding:6px 13px;vertical-align:middle}
